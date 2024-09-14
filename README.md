@@ -2,8 +2,11 @@
 
 - 此區為正式區，勿將測試檔案上傳，以利檔案管理！
 - main 分支僅提供 git clone 使用，請勿自主更新該分支【 Harry 將放共用版型在 main，各位伙伴請在自己的分支(如：dev_harry)開發負責的 html 頁面!】
-- spacer /font-family 已經調整過，無需再設定，可以直接使用！
+- spacer / font-family 已經調整過，無需再設定，可以直接使用！
 - customer_utils.scss 可以放自定義的通用類別
+- vite.cofig.js 裡面的路徑，記得要改才抓得到 gitpage
+  - 地端的寫法：'/'
+  - 上傳的寫法：'/Repository 的名稱/'
 
 ## 指令列表
 
