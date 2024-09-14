@@ -1,0 +1,87 @@
+//字重
+.fw-1 {
+    font-weight: 400;
+}
+
+.fw-2 {
+    font-weight: 500;
+}
+
+.fw-3 {
+    font-weight: 600;
+}
+
+.fw-4 {
+    font-weight: 700;
+}
+
+.fw-5 {
+    font-weight: 800;
+}
+
+.fw-6 {
+    font-weight: 900;
+}
+
+.text-gray-700 {
+    color:$gray-700;
+}
+
+
+//手機版容器
+.py-sm-80 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+// 平板
+.py-md-80 {
+    @include media-breakpoint-up(md) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+// 電腦版容器
+.py-lg-120 {
+    @include media-breakpoint-up(lg) {
+        padding-top:7.5rem;
+        padding-bottom:7.5rem;
+    }
+}
+
+//BS 已經有 25/50/75/100
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.text-gray-1000{
+    color:$gray-1000;
+}
+
+.border-radius-8 {
+    border-radius: 0.5rem;
+}
+
+.border-primary-900 {
+    border:1px solid $primary-900;
+}
+
+
+
