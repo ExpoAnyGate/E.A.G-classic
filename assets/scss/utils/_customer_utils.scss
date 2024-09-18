@@ -51,6 +51,10 @@
 }
 
 //BS 已經有 25/50/75/100
+.w-15 {
+    width: 15%;
+}
+
 .w-20 {
     width: 20%;
 }
@@ -75,11 +79,19 @@
     width: 80%;
 }
 
+.w-85 {
+    width: 85%;
+}
+
 .text-gray-1000{
     color:$gray-1000;
 }
 
-.border-radius-8 {
+.border-radius-img {
+    border-radius: 0.5rem;
+}
+
+.border-radius-btn {
     border-radius: 0.5rem;
 }
 
