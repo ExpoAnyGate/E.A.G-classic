@@ -31,3 +31,17 @@
 - pages # 頁面放置處
 
 - JavaScript 程式碼可寫在 main.js 檔案
+
+
+## 開發小撇步：
+1. 開自己的分支：`git checkout -b dev_<name>`
+2. 把自己的分支設定上游：`git branch -u origin/dev_<name>`
+3. 準備開始寫程式前，先將遠端的 main 拉下來自己的分支： `git pull origin main`
+4. 開始寫程式.....
+5. 加入自己修改過的檔案：`git add <file>`
+6. 加入 commit ：`git commit -m "一些內容（改了哪些/新增了哪些）"`
+7. 推上去自己的遠端分支： `git push` **（要確認上游就是自己的遠端分支）**
+8. 在 github 上面開啟一個 pull request (pr), 將自己遠端的分支 merge 到 遠端的 main **（記得要設定 review 的審核人員）**
+9. 如果出現 conflict 可以直接在 github 上編輯即可
+10. 有至少1人審核通過，就可以 開心地按下 merge 啦～～～～
+11. （輪迴到步驟 3.)
