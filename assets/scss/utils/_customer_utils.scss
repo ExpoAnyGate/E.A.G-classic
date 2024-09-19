@@ -1,5 +1,4 @@
 
-
 //手機版容器
 .py-sm-80 {
     padding-top: 5rem;
@@ -22,17 +21,6 @@
     }
 }
 
-.border-radius-img {
-    border-radius: 0.5rem;
-}
-
-.border-radius-btn {
-    border-radius: 0.5rem;
-}
-
-.border-primary-900 {
-    border:1px solid $primary-900;
-}
 
 $utilities: map-merge(
   $utilities,
@@ -70,11 +58,11 @@ $utilities: map-merge(
           map-get(map-get($utilities, "font-weight"), "values"),
           (
             "400": 400,
-            "500": 500,   
+            "500": 500,   // 新增的自定義
             "600": 600,
             "700": 700,
             "800": 800,
-            "900": 900,
+            "900": 900
           )
         )
       )
