@@ -394,7 +394,7 @@ $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
-
+// $enable-utilities: true;
 $enable-dark-mode:            true !default;
 $color-mode-type:             data !default; // `data` or `media-query`
 
@@ -444,7 +444,7 @@ $spacers: (
   13: $spacer * 3.5, //56px
   14: $spacer * 4,   //64px
   15: $spacer * 5    //80px
-);
+)!default;
 // scss-docs-end spacer-variables-maps
 
 // Position
