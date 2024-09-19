@@ -64,38 +64,11 @@
 @import "../node_modules/bootstrap/scss/helpers";
 
 
-$utilities: map-merge(
-  $utilities,
-  (
-    "width": map-merge(
-      map-get($utilities, "width"),
-      (
-        values: map-merge(
-          map-get(map-get($utilities, "width"), "values"),
-          (
-            "10": 10%,
-            "15": 15%,   // 新增的自定義
-            "20": 20%,
-            "30": 30%,
-            "35": 35%,
-            "65": 65%,
-            "70": 70%,
-            "80": 80%,
-            "85": 85%,
-            "90": 90%
-          )
-        )
-      )
-    )
-  )
-);
-
-///這句必須往後塞
+// ７.其他自定義樣式或工具(有merge)
+@import './utils/customer_utils';
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-
-// 6.其他自定義樣式或工具
-@import './utils/customer_utils';
+// 8.自定義 reset
 @import "./base/base";
 
 @import './layout/navbar.scss';

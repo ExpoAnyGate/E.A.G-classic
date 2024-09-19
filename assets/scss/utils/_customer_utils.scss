@@ -60,3 +60,29 @@
 .border-primary-900 {
     border:1px solid $primary-900;
 }
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            "10": 10%,
+            "15": 15%,   // 新增的自定義
+            "20": 20%,
+            "30": 30%,
+            "35": 35%,
+            "65": 65%,
+            "70": 70%,
+            "80": 80%,
+            "85": 85%,
+            "90": 90%
+          )
+        )
+      )
+    )
+  )
+);
