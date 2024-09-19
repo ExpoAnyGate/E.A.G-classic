@@ -26,7 +26,7 @@ export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
   //這裡記得要改成 /E.A.G-primary/
-  base: '/E.A.G-primary/',
+  base: '/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
