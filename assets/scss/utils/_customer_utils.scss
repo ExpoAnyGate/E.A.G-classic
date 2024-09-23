@@ -1,5 +1,10 @@
 
 //手機版容器
+.py-sm-64 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-sm-80 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -36,6 +41,10 @@ $utilities: map-merge(
             "20": 20%,
             "30": 30%,
             "35": 35%,
+            "40": 40%,
+            "45": 45%,
+            "55": 55%,
+            "60": 60%,
             "65": 65%,
             "70": 70%,
             "80": 80%,
