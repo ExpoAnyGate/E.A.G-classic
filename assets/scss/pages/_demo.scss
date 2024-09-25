@@ -12,4 +12,12 @@
   }
 
 
-  
+.demo-card-header{
+    
+    flex-direction: column;
+    gap: 24px;
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
