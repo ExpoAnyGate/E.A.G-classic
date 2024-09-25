@@ -8,13 +8,953 @@
   </head>
   <body>
     <%- include('./layout/navbar'); -%>
-    <h1>---請刪我---</h1>
-    <button
-      type="button"
-      class="btn btn-tertiary-600 border-radius-btn w-85 mt-10 fw-900"
-    >
-      Primary
-    </button>
+
+    <section class="bg-primary-800">
+      <div class="container">
+        <div
+          class="mt-bp-104-0 d-flex align-items-center justify-content-bp-center-start py-4 px-3 text-white"
+        >
+          <span class="material-symbols-outlined p-0 fs-6"> campaign </span>
+          <h3 class="fs-4 fw-400 ms-3">
+            開放展覽主辦單位贊助，成為本網站的乾爹
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- 手機版 -->
+      <div class="contaner-fluid position-relative d-md-none banner">
+        <div
+          class="text-center text-nowrap text-gray-000 font-family-Noto position-absolute top-50 start-50 translate-middle z-2"
+        >
+          <h1 class="fs-9 fw-700 mb-2">E.A.G - 藝展任意門</h1>
+          <p class="fs-875 mb-6 fw-700">
+            Explore Any Exposition through the Gate
+          </p>
+          <h2 class="fs-6 fw-700 mb-4 position-relative">
+            <img
+              src="../assets/images/deco/line-1.png"
+              alt="line-1.png"
+              class="position-absolute start-50 w-50 top-100 translate-middle"
+            /><span class="position-relative z-2">隨時隨地查找</span>
+          </h2>
+
+          <h2 class="fs-6 fw-700">參與自己感興趣的展覽</h2>
+        </div>
+        <div class="swiper mybanner">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide w-100">
+              <img
+                class="d-block w-100 object-fit-cover"
+                src="../assets/images/banner-sm-2.png"
+                alt="banner-sm-2"
+              />
+            </li>
+            <li class="swiper-slide w-100">
+              <img
+                class="d-block w-100 object-fit-cover"
+                src="../assets/images/banner-sm-1.png"
+                alt="banner-sm-1"
+              />
+            </li>
+            <li class="swiper-slide w-100">
+              <img
+                class="d-block w-100 object-fit-cover"
+                src="../assets/images/banner-sm-3.png"
+                alt="banner-sm-3"
+              />
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- 平板以上 -->
+      <div class="container-fluid d-none d-md-block p-0 banner">
+        <div class="container position-relative">
+          <div
+            class="font-family-Noto text-gray-000 text-nowrap position-absolute z-2 mt-244"
+          >
+            <h1 class="fs-15 fw-900 mb-2">E.A.G - 藝展任意門</h1>
+            <p class="fs-6 fw-500 mb-6">
+              Explore Any Exposition through the Gate
+            </p>
+            <h2 class="fs-9 fw-500">
+              <img
+                src="../assets/images/deco/line-1.png"
+                alt="line-1.png"
+                class="w-45 banner-line-position"
+              /><span class="position-relative z-2"
+                >隨時隨地查找 參與自己感興趣的展覽</span
+              >
+            </h2>
+          </div>
+        </div>
+
+        <div class="swiper mybanner">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide w-100 banner-mask">
+              <img
+                class="d-block w-100"
+                src="../assets/images/demo-origin-4.png"
+                alt="banner-4"
+              />
+            </li>
+            <li class="swiper-slide w-100 banner-mask">
+              <img
+                class="d-block w-100"
+                src="../assets/images/demo-origin-9.png"
+                alt="banner-9"
+              />
+            </li>
+            <li class="swiper-slide w-100 banner-mask">
+              <img
+                class="d-block w-100"
+                src="../assets/images/demo-origin-5.png"
+                alt="banner-5"
+              />
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/search-bar'); -%>
+
+    <section class="bg-secondary-50 overflow-hidden">
+      <!-- 手機版到電腦版 -->
+      <div class="container py-sm-80 recommend position-relative py-lg-120">
+        <h2 class="fw-700 position-relative mb-15">
+          <span class="position-relative z-2">推薦給你</span>
+          <img
+            class="title-line-position"
+            src="../assets/images/deco/line-2.png"
+            alt="line-2"
+          />
+        </h2>
+
+        <picture>
+          <source
+            media="(min-width: 767px)"
+            srcset="../assets/images/deco/vector-lg-1.png"
+          />
+          <img
+            class="vector-position-right vector-position-right-transform-1"
+            src="../assets/images/deco/vector-sm-1.png"
+            alt="vector-sm-1"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(min-width:767px )"
+            srcset="../assets/images/deco/vector-lg-2.png"
+          />
+          <img
+            class="vector-position-right vector-position-right-transform-2"
+            src="../assets/images/deco/vector-sm-2.png"
+            alt="vector-sm-2"
+          />
+        </picture>
+        <img
+          class="vector-position-left vector-position-left-transform-3 d-none d-md-block"
+          src="../assets/images/deco/vector-lg-3.png"
+          alt="vector-3"
+        />
+        <img
+          class="vector-position-left vector-position-left-transform-4 d-none d-md-block"
+          src="../assets/images/deco/vector-lg-4.png"
+          alt="vector-4"
+        />
+
+        <div class="swiper myrecommend z-3 overflow-visible">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-6.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-6.png"
+                    alt="demo-sm-6"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                    <div>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/location_outlined.png"
+                        alt="location_outlined"
+                      />
+                      <span>台北市</span>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        光影交錯：攝影藝術展
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#攝影展</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#光影藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      透過鏡頭捕捉光與影的交錯瞬間，展現攝影師對日常與自然世界的深刻觀察，帶來一場視覺與情感的雙重饗宴。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <div>
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/heart-outline.png"
+                          alt="heart"
+                        />
+                        <span>1,200</span>
+                      </div>
+                      <div class="ms-6">
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/eye-filled.png"
+                          alt="eye"
+                        />
+                        <span>15,000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-3.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-3.png"
+                    alt="demo-sm-3"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                    <div>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/location_outlined.png"
+                        alt="location_outlined"
+                      />
+                      <span>桃園市</span>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        現代設計未來：數位創作引領跨世代潮流
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#數位藝術</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#未來設計</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      以數位技術為核心，這場展覽探討未來設計的可能性，結合藝術與科技，呈現前所未有的創意形式，讓觀眾一窺未來的藝術世界。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <div>
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/heart-outline.png"
+                          alt="heart"
+                        />
+                        <span>1,200</span>
+                      </div>
+                      <div class="ms-6">
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/eye-filled.png"
+                          alt="eye"
+                        />
+                        <span>15,000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-13.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-13.png"
+                    alt="demo-sm-13"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                    <div>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/location_outlined.png"
+                        alt="location_outlined"
+                      />
+                      <span>高雄市</span>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        色彩的力量：抽象繪畫展
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#攝影展</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#光影藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      這場現代藝術展是一場跨越全球的創意饗宴，集合了當代藝術家的精選作品，涵蓋繪畫、雕塑、裝置藝術、數位藝術及多媒體創作。每件作品都深刻反映了藝術家對社會、文化、科技和個人情感的獨特探索，運用抽象與具象的表現手法，帶來感官的刺激和思想的啟發。觀眾將透過這些作品，體驗到不僅是藝術的美感，還有作品中隱含的深層思考與觀點。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <div>
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/heart-outline.png"
+                          alt="heart"
+                        />
+                        <span>1,200</span>
+                      </div>
+                      <div class="ms-6">
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/eye-filled.png"
+                          alt="eye"
+                        />
+                        <span>15,000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-6.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-6.png"
+                    alt="demo-sm-6"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                    <div>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/location_outlined.png"
+                        alt="location_outlined"
+                      />
+                      <span>台北市</span>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        光影交錯：攝影藝術展
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#攝影展</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#光影藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      透過鏡頭捕捉光與影的交錯瞬間，展現攝影師對日常與自然世界的深刻觀察，帶來一場視覺與情感的雙重饗宴。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <div>
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/heart-outline.png"
+                          alt="heart"
+                        />
+                        <span>1,200</span>
+                      </div>
+                      <div class="ms-6">
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/eye-filled.png"
+                          alt="eye"
+                        />
+                        <span>15,000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-3.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-3.png"
+                    alt="demo-sm-3"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                    <div>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/location_outlined.png"
+                        alt="location_outlined"
+                      />
+                      <span>桃園市</span>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        現代設計未來：數位創作引領跨世代潮流
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#數位藝術</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#未來設計</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      以數位技術為核心，這場展覽探討未來設計的可能性，結合藝術與科技，呈現前所未有的創意形式，讓觀眾一窺未來的藝術世界。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <div>
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/heart-outline.png"
+                          alt="heart"
+                        />
+                        <span>1,200</span>
+                      </div>
+                      <div class="ms-6">
+                        <img
+                          class="align-top me-1"
+                          src="../assets/images/icon/eye-filled.png"
+                          alt="eye"
+                        />
+                        <span>15,000</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-bp-between-center align-items-center mt-15"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary-700 py-2 pe-3 myrecommend-button-prev"
+            >
+              <span
+                class="material-symbols-outlined p-0 text-gray-000 align-middle ps-2"
+              >
+                arrow_back_ios
+              </span>
+            </button>
+            <div class="swiper-pagination position-static"></div>
+            <button
+              type="button"
+              class="btn btn-secondary-700 py-2 px-4 myrecommend-button-next"
+            >
+              <span
+                class="material-symbols-outlined p-0 text-gray-000 align-middle"
+              >
+                arrow_forward_ios
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 藍色裝飾待補 -->
+    <section class="bg-primary-50">
+      <div class="container py-sm-80 last-demo py-lg-120">
+        <h2 class="fw-700 position-relative mb-15">
+          <span class="position-relative z-2">最新展覽</span>
+          <img
+            class="title-line-position"
+            src="../assets/images/deco/line-3.png"
+            alt="line-3"
+          />
+        </h2>
+        <!-- 手機版 -->
+        <div class="d-md-none">
+          <ul class="row gy-17">
+            <li class="col-12">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-11.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-11.png"
+                    alt="demo-sm-6"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">夢境與現實</h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#超現實主義</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#夢幻藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      這場展覽帶領觀眾進入超現實主義的夢幻世界，模糊了夢境與現實的界線。每一幅作品都充滿了象徵與隱喻，讓人思考潛意識、夢想與現實之間的關係。藝術家通過奇異的場景與不合常理的組合，挑戰了我們對現實的理解。這場展覽是一場視覺的冒險，邀請觀眾在畫布中探索那些難以解釋的世界，並重新審視日常生活中被忽略的奇蹟。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="col-12">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-8.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-8.png"
+                    alt="demo-sm-6"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        無形之美：雕塑與空間的對話
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#雕塑藝術</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#空間美學</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      這場雕塑展超越了傳統的雕塑藝術表達形式，探索了雕塑作品與其所處空間之間的互動。每件作品不僅是獨立的藝術品，還與周圍環境形成對話，通過材質、形狀和比例，重新定義了空間的使用與感知。藝術家們運用金屬、木材、玻璃等多種材料，創造出令人驚嘆的雕塑作品，挑戰觀眾對空間、物質和形態的既有認識。這場展覽不僅邀請觀眾從不同角度欣賞雕塑的形態美，更鼓勵人們思考空間與人之間的關係。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="col-12">
+              <div class="d-flex flex-column">
+                <picture>
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="../assets/images/demo-lg-7.png"
+                  />
+                  <img
+                    class="w-100"
+                    src="../assets/images/demo-sm-7.png"
+                    alt="demo-sm-6"
+                  />
+                </picture>
+                <ul class="mt-4 text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        自然的回聲：環保主題藝術展
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#環保藝術</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#自然力量</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      以環保為主題，這場展覽通過藝術家的視角，表達了對自然的敬畏和對環境問題的關注。作品涵蓋繪畫、雕塑、裝置藝術和多媒體創作，每一件作品都反映了藝術家對自然環境的深刻洞察與思考。這些作品不僅展現了自然的美麗，還強調了環境的脆弱性，呼籲觀眾採取行動，保護我們的地球。觀眾在參觀展覽的同時，會不自覺地反思我們與自然的關係，並被激勵去更深刻地理解和關心我們賴以生存的環境。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 平板以上 -->
+        <div class="d-none d-md-block">
+          <!-- 第一張展覽圖 -->
+          <ul class="row mb-17">
+            <li class="col-7">
+              <img
+                class="w-100"
+                src="../assets/images/demo-lg-11.png"
+                alt="demo-11"
+              />
+            </li>
+            <li class="col-5">
+              <ul class="text-gray-700">
+                <li class="mb-4 d-flex justify-content-between">
+                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
+                    >2024/8/15-2024/9/15</time
+                  >
+                </li>
+                <li class="mb-4">
+                  <div class="d-flex">
+                    <h3 class="fw-700 fs-6 text-truncate">夢境與現實</h3>
+                    <img
+                      class="align-top"
+                      src="../assets/images/icon/Bookmark_add.png"
+                      alt="Bookmark_add"
+                    />
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <span
+                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#超現實主義</span
+                  >
+                  <span
+                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#夢幻藝術</span
+                  >
+                </li>
+                <li class="mb-4">
+                  <p class="fs-4 fw-400">
+                    這場展覽帶領觀眾進入超現實主義的夢幻世界，模糊了夢境與現實的界線。每一幅作品都充滿了象徵與隱喻，讓人思考潛意識、夢想與現實之間的關係。藝術家通過奇異的場景與不合常理的組合，挑戰了我們對現實的理解。這場展覽是一場視覺的冒險，邀請觀眾在畫布中探索那些難以解釋的世界，並重新審視日常生活中被忽略的奇蹟。
+                  </p>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="#"
+                    type="button"
+                    class="btn btn-gray-000 border-gray-400"
+                  >
+                    瞭解更多
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- 第二張展覽圖 -->
+          <ul class="row mb-17">
+            <li class="col-5">
+              <ul class="text-gray-700">
+                <li class="mb-4 d-flex justify-content-between">
+                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
+                    >2024/8/15-2024/9/15</time
+                  >
+                </li>
+                <li class="mb-4">
+                  <div class="d-flex">
+                    <h3 class="fw-700 fs-6 text-truncate">
+                      無形之美：雕塑與空間的對話
+                    </h3>
+                    <img
+                      class="align-top"
+                      src="../assets/images/icon/Bookmark_add.png"
+                      alt="Bookmark_add"
+                    />
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <span
+                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#空間美學</span
+                  >
+                  <span
+                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#雕塑藝術</span
+                  >
+                </li>
+                <li class="mb-4">
+                  <p class="fs-4 fw-400">
+                    這場雕塑展超越了傳統的雕塑藝術表達形式，探索了雕塑作品與其所處空間之間的互動。每件作品不僅是獨立的藝術品，還與周圍環境形成對話，通過材質、形狀和比例，重新定義了空間的使用與感知。藝術家們運用金屬、木材、玻璃等多種材料，創造出令人驚嘆的雕塑作品，挑戰觀眾對空間、物質和形態的既有認識。這場展覽不僅邀請觀眾從不同角度欣賞雕塑的形態美，更鼓勵人們思考空間與人之間的關係。
+                  </p>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="#"
+                    type="button"
+                    class="btn btn-gray-000 border-gray-400"
+                  >
+                    瞭解更多
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="col-7">
+              <img
+                class="w-100"
+                src="../assets/images/demo-lg-8.png"
+                alt="demo-8"
+              />
+            </li>
+          </ul>
+          <!-- 第三張展覽圖  -->
+          <ul class="row">
+            <li class="col-7">
+              <img
+                class="w-100"
+                src="../assets/images/demo-lg-7.png"
+                alt="demo-7"
+              />
+            </li>
+            <li class="col-5">
+              <ul class="text-gray-700">
+                <li class="mb-4 d-flex justify-content-between">
+                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
+                    >2024/8/15-2024/9/15</time
+                  >
+                </li>
+                <li class="mb-4">
+                  <div class="d-flex">
+                    <h3 class="fw-700 fs-6 text-truncate">
+                      自然的回聲：環保主題藝術展
+                    </h3>
+                    <img
+                      class="align-top"
+                      src="../assets/images/icon/Bookmark_add.png"
+                      alt="Bookmark_add"
+                    />
+                  </div>
+                </li>
+                <li class="mb-4">
+                  <span
+                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#環保藝術</span
+                  >
+                  <span
+                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                    >#自然力量</span
+                  >
+                </li>
+                <li class="mb-4">
+                  <p class="fs-4 fw-400">
+                    以環保為主題，這場展覽通過藝術家的視角，表達了對自然的敬畏和對環境問題的關注。作品涵蓋繪畫、雕塑、裝置藝術和多媒體創作，每一件作品都反映了藝術家對自然環境的深刻洞察與思考。這些作品不僅展現了自然的美麗，還強調了環境的脆弱性，呼籲觀眾採取行動，保護我們的地球。觀眾在參觀展覽的同時，會不自覺地反思我們與自然的關係，並被激勵去更深刻地理解和關心我們賴以生存的環境。
+                  </p>
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="#"
+                    type="button"
+                    class="btn btn-gray-000 border-gray-400"
+                  >
+                    瞭解更多
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
