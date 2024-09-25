@@ -35,7 +35,7 @@
 ## 開發小撇步：
 
 1. 開自己的分支：`git checkout -b dev_<name>`
-2. 把自己的分支設定上游：git push -u origin dev*<name>; 確認上游:可用 git branch -vv  如果是 \* dev* commitID [origin/dev_]，表示本地  dev*<name>  正在追蹤  origin/dev*<name>（設置成功）
+2. 把自己的分支設定上游：git push -u origin dev_<name>; 確認上游:可用 git branch -vv  如果是 * dev_commitID [origin/dev_]，表示本地  dev_<name>  正在追蹤  origin/dev_<name>（設置成功）
 3. 準備開始寫程式前，先將遠端的 main 拉下來自己的分支： `git pull origin main`
 4. 開始寫程式.....
 5. 加入自己修改過的檔案：`git add <file>`
