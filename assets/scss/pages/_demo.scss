@@ -1,0 +1,15 @@
+.demo-banner {
+    background-image: url("../images/demo-banner-lg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 560px;
+    @include media-breakpoint-up(sm) {
+        background-image: url("../images/demo-banner.png");
+        height: 480px;
+        background-position: left;
+    }
+  }
+
+
+  
