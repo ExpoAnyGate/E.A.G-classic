@@ -63,7 +63,7 @@
 }
 
 
-.recommend, .last-demo{
+.recommend, .last-demo, .hot-demo{
     h2 {
         font-size: 1.875rem;
         @include media-breakpoint-up(md) {
@@ -237,3 +237,18 @@
 
 }
 
+.hot-demo {
+    .gy-100{
+        row-gap: 6.25rem;
+    }
+
+    li > p {
+        height: 3rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+}
