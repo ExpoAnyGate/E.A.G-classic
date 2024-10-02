@@ -133,7 +133,7 @@
             alt="line-2"
           />
         </h2>
-
+        <!-- 裝飾 -->
         <picture>
           <source
             media="(min-width: 767px)"
@@ -594,9 +594,8 @@
       </div>
     </section>
 
-    <!-- 藍色裝飾待補 -->
-    <section class="bg-primary-50">
-      <div class="container py-sm-80 last-demo py-lg-120">
+    <section class="bg-primary-50 overflow-hidden">
+      <div class="container py-sm-80 last-demo py-lg-120 position-relative">
         <h2 class="fw-700 position-relative mb-15">
           <span class="position-relative z-2">最新展覽</span>
           <img
@@ -605,9 +604,38 @@
             alt="line-3"
           />
         </h2>
+        <!-- 裝飾 -->
+        <!-- 手機版 -->
+        <img
+          class="linegp-position-sm-2 linegp-position-sm-2-transform d-md-none"
+          src="../assets/images/deco/linegp-sm-2.png"
+          alt="linegp-sm-2"
+        />
+        <img
+          class="linegp-position-sm-1 linegp-position-sm-1-transform d-md-none"
+          src="../assets/images/deco/linegp-sm-1.png"
+          alt="linegp-sm-1"
+        />
+        <img
+          class="linegp-position-sm-3 linegp-position-sm-3-transform d-md-none"
+          src="../assets/images/deco/linegp-sm-3.png"
+          alt="linegp-sm-3"
+        />
+        <!-- 電腦版 -->
+        <img
+          class="linegp-position-lg-top linegp-position-lg-top-transform d-none d-md-block"
+          src="../assets/images/deco/linegp-lg-2.png"
+          alt="linegp-lg-2"
+        />
+        <img
+          class="linegp-position-lg-bottom linegp-position-lg-bottom-transform d-none d-md-block"
+          src="../assets/images/deco/linegp-lg-1.png"
+          alt="linegp-lg-1"
+        />
+
         <!-- 手機版 -->
         <div class="d-md-none">
-          <ul class="row gy-17">
+          <ul class="row gy-17 position-relative z-2">
             <li class="col-12">
               <div class="d-flex flex-column">
                 <picture>
@@ -655,12 +683,13 @@
                     </p>
                   </li>
                   <li class="mb-4">
-                    <button
-                      type="button"
+                    <a
+                      href="#"
                       class="btn btn-gray-000 border-gray-400"
+                      role="button"
                     >
                       瞭解更多
-                    </button>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -714,12 +743,13 @@
                     </p>
                   </li>
                   <li class="mb-4">
-                    <button
-                      type="button"
+                    <a
+                      href="#"
                       class="btn btn-gray-000 border-gray-400"
+                      role="button"
                     >
                       瞭解更多
-                    </button>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -773,184 +803,210 @@
                     </p>
                   </li>
                   <li class="mb-4">
-                    <button
-                      type="button"
+                    <a
+                      href="#"
                       class="btn btn-gray-000 border-gray-400"
+                      role="button"
                     >
                       瞭解更多
-                    </button>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
+          <div class="text-center mt-10">
+            <a
+              href="#"
+              class="btn btn-gray-700 text-gray-000 py-2"
+              role="button"
+            >
+              查看更多
+            </a>
+          </div>
         </div>
 
         <!-- 平板以上 -->
-        <div class="d-none d-md-block">
-          <!-- 第一張展覽圖 -->
-          <ul class="row mb-17">
-            <li class="col-7">
-              <img
-                class="w-100"
-                src="../assets/images/demo-lg-11.png"
-                alt="demo-11"
-              />
-            </li>
-            <li class="col-5">
-              <ul class="text-gray-700">
-                <li class="mb-4 d-flex justify-content-between">
-                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
-                    >2024/8/15-2024/9/15</time
-                  >
-                </li>
-                <li class="mb-4">
-                  <div class="d-flex">
-                    <h3 class="fw-700 fs-6 text-truncate">夢境與現實</h3>
-                    <img
-                      class="align-top"
-                      src="../assets/images/icon/Bookmark_add.png"
-                      alt="Bookmark_add"
-                    />
-                  </div>
-                </li>
-                <li class="mb-4">
-                  <span
-                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#超現實主義</span
-                  >
-                  <span
-                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#夢幻藝術</span
-                  >
-                </li>
-                <li class="mb-4">
-                  <p class="fs-4 fw-400">
-                    這場展覽帶領觀眾進入超現實主義的夢幻世界，模糊了夢境與現實的界線。每一幅作品都充滿了象徵與隱喻，讓人思考潛意識、夢想與現實之間的關係。藝術家通過奇異的場景與不合常理的組合，挑戰了我們對現實的理解。這場展覽是一場視覺的冒險，邀請觀眾在畫布中探索那些難以解釋的世界，並重新審視日常生活中被忽略的奇蹟。
-                  </p>
-                </li>
-                <li class="mb-4">
-                  <a
-                    href="#"
-                    type="button"
-                    class="btn btn-gray-000 border-gray-400"
-                  >
-                    瞭解更多
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <!-- 第二張展覽圖 -->
-          <ul class="row mb-17">
-            <li class="col-5">
-              <ul class="text-gray-700">
-                <li class="mb-4 d-flex justify-content-between">
-                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
-                    >2024/8/15-2024/9/15</time
-                  >
-                </li>
-                <li class="mb-4">
-                  <div class="d-flex">
-                    <h3 class="fw-700 fs-6 text-truncate">
-                      無形之美：雕塑與空間的對話
-                    </h3>
-                    <img
-                      class="align-top"
-                      src="../assets/images/icon/Bookmark_add.png"
-                      alt="Bookmark_add"
-                    />
-                  </div>
-                </li>
-                <li class="mb-4">
-                  <span
-                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#空間美學</span
-                  >
-                  <span
-                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#雕塑藝術</span
-                  >
-                </li>
-                <li class="mb-4">
-                  <p class="fs-4 fw-400">
-                    這場雕塑展超越了傳統的雕塑藝術表達形式，探索了雕塑作品與其所處空間之間的互動。每件作品不僅是獨立的藝術品，還與周圍環境形成對話，通過材質、形狀和比例，重新定義了空間的使用與感知。藝術家們運用金屬、木材、玻璃等多種材料，創造出令人驚嘆的雕塑作品，挑戰觀眾對空間、物質和形態的既有認識。這場展覽不僅邀請觀眾從不同角度欣賞雕塑的形態美，更鼓勵人們思考空間與人之間的關係。
-                  </p>
-                </li>
-                <li class="mb-4">
-                  <a
-                    href="#"
-                    type="button"
-                    class="btn btn-gray-000 border-gray-400"
-                  >
-                    瞭解更多
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="col-7">
-              <img
-                class="w-100"
-                src="../assets/images/demo-lg-8.png"
-                alt="demo-8"
-              />
-            </li>
-          </ul>
-          <!-- 第三張展覽圖  -->
-          <ul class="row">
-            <li class="col-7">
-              <img
-                class="w-100"
-                src="../assets/images/demo-lg-7.png"
-                alt="demo-7"
-              />
-            </li>
-            <li class="col-5">
-              <ul class="text-gray-700">
-                <li class="mb-4 d-flex justify-content-between">
-                  <time datetime="2024/8/15-2024/9/15" class="font-family-Noto"
-                    >2024/8/15-2024/9/15</time
-                  >
-                </li>
-                <li class="mb-4">
-                  <div class="d-flex">
-                    <h3 class="fw-700 fs-6 text-truncate">
-                      自然的回聲：環保主題藝術展
-                    </h3>
-                    <img
-                      class="align-top"
-                      src="../assets/images/icon/Bookmark_add.png"
-                      alt="Bookmark_add"
-                    />
-                  </div>
-                </li>
-                <li class="mb-4">
-                  <span
-                    class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#環保藝術</span
-                  >
-                  <span
-                    class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
-                    >#自然力量</span
-                  >
-                </li>
-                <li class="mb-4">
-                  <p class="fs-4 fw-400">
-                    以環保為主題，這場展覽通過藝術家的視角，表達了對自然的敬畏和對環境問題的關注。作品涵蓋繪畫、雕塑、裝置藝術和多媒體創作，每一件作品都反映了藝術家對自然環境的深刻洞察與思考。這些作品不僅展現了自然的美麗，還強調了環境的脆弱性，呼籲觀眾採取行動，保護我們的地球。觀眾在參觀展覽的同時，會不自覺地反思我們與自然的關係，並被激勵去更深刻地理解和關心我們賴以生存的環境。
-                  </p>
-                </li>
-                <li class="mb-4">
-                  <a
-                    href="#"
-                    type="button"
-                    class="btn btn-gray-000 border-gray-400"
-                  >
-                    瞭解更多
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div class="d-none d-md-block position-relative z-3">
+          <div class="d-flex flex-column">
+            <!-- 第一張展覽圖 -->
+            <ul class="row mb-17">
+              <li class="col-7">
+                <img
+                  class="w-100"
+                  src="../assets/images/demo-lg-11.png"
+                  alt="demo-11"
+                />
+              </li>
+              <li class="col-5">
+                <ul class="text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">夢境與現實</h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#超現實主義</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#夢幻藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      這場展覽帶領觀眾進入超現實主義的夢幻世界，模糊了夢境與現實的界線。每一幅作品都充滿了象徵與隱喻，讓人思考潛意識、夢想與現實之間的關係。藝術家通過奇異的場景與不合常理的組合，挑戰了我們對現實的理解。這場展覽是一場視覺的冒險，邀請觀眾在畫布中探索那些難以解釋的世界，並重新審視日常生活中被忽略的奇蹟。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <a
+                      href="#"
+                      role="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- 第二張展覽圖 -->
+            <ul class="row mb-17">
+              <li class="col-5">
+                <ul class="text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        無形之美：雕塑與空間的對話
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#空間美學</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#雕塑藝術</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      這場雕塑展超越了傳統的雕塑藝術表達形式，探索了雕塑作品與其所處空間之間的互動。每件作品不僅是獨立的藝術品，還與周圍環境形成對話，通過材質、形狀和比例，重新定義了空間的使用與感知。藝術家們運用金屬、木材、玻璃等多種材料，創造出令人驚嘆的雕塑作品，挑戰觀眾對空間、物質和形態的既有認識。這場展覽不僅邀請觀眾從不同角度欣賞雕塑的形態美，更鼓勵人們思考空間與人之間的關係。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <a
+                      href="#"
+                      role="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="col-7">
+                <img
+                  class="w-100"
+                  src="../assets/images/demo-lg-8.png"
+                  alt="demo-8"
+                />
+              </li>
+            </ul>
+            <!-- 第三張展覽圖  -->
+            <ul class="row mb-17">
+              <li class="col-7">
+                <img
+                  class="w-100"
+                  src="../assets/images/demo-lg-7.png"
+                  alt="demo-7"
+                />
+              </li>
+              <li class="col-5">
+                <ul class="text-gray-700">
+                  <li class="mb-4 d-flex justify-content-between">
+                    <time
+                      datetime="2024/8/15-2024/9/15"
+                      class="font-family-Noto"
+                      >2024/8/15-2024/9/15</time
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <div class="d-flex">
+                      <h3 class="fw-700 fs-6 text-truncate">
+                        自然的回聲：環保主題藝術展
+                      </h3>
+                      <img
+                        class="align-top"
+                        src="../assets/images/icon/Bookmark_add.png"
+                        alt="Bookmark_add"
+                      />
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span
+                      class="rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#環保藝術</span
+                    >
+                    <span
+                      class="ms-4 rounded-pill text-gray-700 border-gray-700 border bg-gray-000 py-1 px-2"
+                      >#自然力量</span
+                    >
+                  </li>
+                  <li class="mb-4">
+                    <p class="fs-4 fw-400">
+                      以環保為主題，這場展覽通過藝術家的視角，表達了對自然的敬畏和對環境問題的關注。作品涵蓋繪畫、雕塑、裝置藝術和多媒體創作，每一件作品都反映了藝術家對自然環境的深刻洞察與思考。這些作品不僅展現了自然的美麗，還強調了環境的脆弱性，呼籲觀眾採取行動，保護我們的地球。觀眾在參觀展覽的同時，會不自覺地反思我們與自然的關係，並被激勵去更深刻地理解和關心我們賴以生存的環境。
+                    </p>
+                  </li>
+                  <li class="mb-4">
+                    <a
+                      href="#"
+                      role="button"
+                      class="btn btn-gray-000 border-gray-400"
+                    >
+                      瞭解更多
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              class="btn btn-gray-700 text-gray-000 mx-auto py-2"
+              role="button"
+            >
+              查看更多
+            </a>
+          </div>
         </div>
       </div>
     </section>

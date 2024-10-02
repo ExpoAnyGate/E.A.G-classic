@@ -33,12 +33,13 @@
         </select>
       </li>
       <li class="col-12">
-        <select
-          class="form-select px-6 py-3 fs-4 border-gray-400"
-          aria-label="Default select example"
-        >
-          <option selected>展覽日期</option>
-        </select>
+        <input
+          class="form-select date px-6 py-3 fs-4 border-gray-400"
+          id="datetimepicker1"
+          data-td-target-input="nearest"
+          data-td-target-toggle="nearest"
+          placeholder="展覽日期"
+        />
       </li>
       <li class="col-12">
         <form class="position-relative text-gray-500" role="search">
@@ -85,12 +86,13 @@
             <option value="高雄市">高雄市</option>
           </select>
 
-          <select
-            class="form-select py-3 fs-4 w-15 border-gray-400"
-            aria-label="Default select example"
-          >
-            <option selected>展覽日期</option>
-          </select>
+          <input
+            class="form-select date py-3 fs-4 w-15 border-gray-400"
+            id="datetimepicker2"
+            data-td-target-input="nearest"
+            data-td-target-toggle="nearest"
+            placeholder="展覽日期"
+          />
 
           <select
             class="form-select py-3 fs-4 w-15 border-gray-400"
@@ -137,3 +139,16 @@
     </ul>
   </div>
 </section>
+
+<!-- 以下為月曆的JS，其中月曆的樣式、定位、內容尚需修改 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0-beta2/js/tempus-dominus.min.js"></script>
+<script>
+  new tempusDominus.TempusDominus(document.getElementById("datetimepicker1"), {
+    multipleDates: true,
+  });
+  new tempusDominus.TempusDominus(document.getElementById("datetimepicker2"), {
+    multipleDates: true,
+  });
+</script>
