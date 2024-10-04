@@ -22,6 +22,17 @@ let myrecommend = new Swiper(".myrecommend", {
 });
 
 
+let myHotdemo = new Swiper(".myHotdemo", {
+  slidesPerView: 'auto',  // 設定每個 slide 根據內容自動調整寬度
+  spaceBetween: 24,       // slide 之間的間距（可根據需要調整）
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  centeredSlides: true, 
+});
+
+
 // -------
 let myrecommend_prevButton = document.querySelector('.myrecommend-button-prev');
 let myrecommend_nextButton = document.querySelector('.myrecommend-button-next');

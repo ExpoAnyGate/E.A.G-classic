@@ -23,6 +23,13 @@
     }
 }
 
+.py-lg-100 {
+  @include media-breakpoint-up(lg) {
+    padding-top:6.25rem;
+    padding-bottom:6.25rem;
+}
+}
+
 // 電腦版容器
 .py-lg-120 {
     @include media-breakpoint-up(lg) {
