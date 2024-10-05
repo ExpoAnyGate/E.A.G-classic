@@ -26,22 +26,14 @@
     }
 }
 
-.demo-sub-card{
-	width: 100%;
-	// justify-content: space-between;
-    // align-items: center;
+.sub-sponsor{
 	flex-direction: column;
-
 	@include media-breakpoint-up(md) {
-
 		flex-direction: row;
     }
 	@include media-breakpoint-up(xl) {
-        width: 30%;
 		flex-direction: column;
     }
-
-	
 }
 
 .score-info{
@@ -129,9 +121,45 @@ ol.demo-notice{
 }
 
 
-.demo-special{
+.demo-lg-special{
+	display: none;
+
+	@include media-breakpoint-up(md) {
+		display: block;
+        width: 30%;
+    }
+}
+
+
+
+.sm-showed{
 	display: block;
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up(xl) {
         display: none;
     }
+}
+
+
+
+.main-demo{
+	width: 100%;
+	@include media-breakpoint-up(xl) {
+		width: 70%;
+	}
+}
+.other-info{
+	width: 100%;
+	display: none;
+@include media-breakpoint-up(xl) {
+		display: flex;
+		width: 30%;
+}
+}
+
+.main-demo-special{
+	display: block;
+
+	@include media-breakpoint-up(xl) {
+		display: none;
+	}
 }
