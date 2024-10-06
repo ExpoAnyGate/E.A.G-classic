@@ -12,12 +12,6 @@
     box-shadow: none; //移除陰影
 }
 
-.img-240 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 @media (max-width: 992px){
     .focus-card {
         margin-bottom: 24px;
@@ -29,9 +23,15 @@
     overflow: hidden;
 
     @include media-breakpoint-down(sm) {
-         min-width: 303px;
+        min-width: 303px;
         height: 240px; 
     }
+}
+
+.img-240 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .title-font-size-lg {
