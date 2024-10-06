@@ -63,7 +63,7 @@
 }
 
 
-.recommend, .last-demo{
+.recommend, .last-demo, .hot-demo{
     h2 {
         font-size: 1.875rem;
         @include media-breakpoint-up(md) {
@@ -203,37 +203,79 @@
     }
 
     .linegp-position-sm-2{
-        width: 100vw;
+        width: 110vw;
         position: absolute;
         left: 0;
         top:10%;
         &-transform {
-            transform: translate(0%,0%);
+            transform: translate(-15%,0%);
             z-index: 1;
         }
     }
 
     .linegp-position-sm-1{
-        width: 100vw;
+        width: 110vw;
         position: absolute;
         left: 0;
         top:50%;
         &-transform {
-            transform: translate(0%,-60%);
+            transform: translate(-15%,-60%);
             z-index: 1;
         }
     }
 
     .linegp-position-sm-3{
-        width: 100vw;
+        width: 110vw;
         position: absolute;
         left: 0;
         bottom:0;
         &-transform {
-            transform: translate(0%,-200%);
+            transform: translate(-15%,-200%);
             z-index: 1;
         }
     }
 
 }
 
+.hot-demo {
+    .gy-100{
+        row-gap: 6.25rem;
+    }
+
+    .mb-100 {
+        margin-bottom: 6.25rem;
+    }
+
+    li > p {
+        height: 3rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .round-position-lg-left {
+        position: absolute;
+        left: 0;
+        top: 25%;
+        transform: translate(-70%,0%);
+        z-index: 1;
+    }
+
+    .round-position-lg-right {
+        position: absolute;
+        right: 0;
+        top:100%;
+        transform: translate(60%,-80%);
+        z-index: 1;
+    }
+}
+
+.border-top-right-radius{
+    border-top-right-radius: 6.25rem;
+}
+
+.border-bottom-left-radius {
+    border-bottom-left-radius: 6.25rem;
+}
