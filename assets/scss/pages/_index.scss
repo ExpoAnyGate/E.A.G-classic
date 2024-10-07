@@ -275,12 +275,12 @@
 .hot-demo ,.last-demo {
     .img-enlarge{
         transition: 0.4s;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.4s;
+        }
     }
 
-    .img-enlarge:hover {
-        transform: scale(1.1);
-        transition: 0.4s;
-    }
 }
 
 .border-top-left-radius-10{
