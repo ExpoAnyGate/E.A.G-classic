@@ -28,9 +28,10 @@
 
 .sub-sponsor{
 	flex-direction: column;
-	@include media-breakpoint-up(md) {
-		flex-direction: row;
-    }
+
+	// @include media-breakpoint-up(md) {
+	// 	flex-direction: row;
+    // }
 	@include media-breakpoint-up(xl) {
 		flex-direction: column;
     }
@@ -38,9 +39,9 @@
 
 .score-info{
 	width: 100%;
-	@include media-breakpoint-up(md) {
-        width: 50%;
-    }
+	// @include media-breakpoint-up(md) {
+    //     width: 50%;
+    // }
 	@include media-breakpoint-up(lg) {
         width: 100%;
     }
@@ -48,9 +49,9 @@
 
 .demo-sponsor {
 	width: 100%;
-	@include media-breakpoint-up(md) {
-        width: 50%;
-    }
+	// @include media-breakpoint-up(md) {
+    //     width: 50%;
+    // }
 	@include media-breakpoint-up(lg) {
         width: 100%;
     }
@@ -158,8 +159,26 @@ ol.demo-notice{
 
 .main-demo-special{
 	display: block;
-
+	margin-top: 16px;
+	justify-content: space-between;
+	align-items:baseline;
 	@include media-breakpoint-up(xl) {
 		display: none;
 	}
+}
+
+
+.demo-title-underline {
+    bottom: 0;         
+    left: 0;            
+    width: 100%;          
+}
+
+.triangel{
+	top: 0; 
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    height: auto;
+    z-index: 1; 
 }
