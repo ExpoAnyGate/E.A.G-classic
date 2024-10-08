@@ -166,3 +166,19 @@ ol.demo-notice{
 		display: none;
 	}
 }
+
+
+.demo-title-underline {
+    bottom: 0;         
+    left: 0;            
+    width: 100%;          
+}
+
+.triangel{
+	top: 0; 
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    height: auto;
+    z-index: 1; 
+}
