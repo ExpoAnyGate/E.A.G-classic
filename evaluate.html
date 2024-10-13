@@ -22,7 +22,7 @@
           type="button"
           class="btn btn-white border border-gray-400 rounded-3 login-btn py-2 px-4 login-btn"
           data-bs-toggle="modal"
-          data-bs-target="#memberLogIn"
+          data-bs-target="#memberLogin"
         >
           <span
             style="height: 1.5rem; width: 1.5rem"
@@ -34,7 +34,7 @@
         <!-- Modal -->
         <div
           class="modal fade"
-          id="memberLogIn"
+          id="memberLogin"
           tabindex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
@@ -169,7 +169,7 @@
                         type="summit"
                         class="btn btn-primary-600 text-gray-000 w-50 py-3 ms-3"
                         data-bs-dismiss="modal"
-                        onclick="changeElement()"
+                        onclick="changeLogin()"
                         aria-label="Close"
                       >
                         登入
@@ -332,7 +332,7 @@
 
 <!-- 會員登入後 登入btn隱藏 -->
 <script>
-  function changeElement() {
+  function changeLogin() {
     const unLogin = document.getElementById("displayNone");
     unLogin.style.display = "none";
 
