@@ -17,7 +17,7 @@
       </a>
 
       <!-- Button trigger modal -->
-      <div id="displayNone">
+      <div id="loginDisplayNone">
         <button
           type="button"
           class="btn btn-white border border-gray-400 rounded-3 login-btn py-2 px-4 login-btn"
@@ -228,7 +228,7 @@
         </div>
       </div>
 
-      <div class="dropdown" id="displayBlock">
+      <div class="dropdown" id="loginDisplayBlock">
         <button
           class="btn btn-white border border-gray-400 rounded-3 login-btn py-2 px-4"
           type="button"
@@ -333,10 +333,10 @@
 <!-- 會員登入後 登入btn隱藏 -->
 <script>
   function changeLogin() {
-    const unLogin = document.getElementById("displayNone");
+    const unLogin = document.getElementById("loginDisplayNone");
     unLogin.style.display = "none";
 
-    const login = document.getElementById("displayBlock");
+    const login = document.getElementById("loginDisplayBlock");
     login.style.display = "block";
   }
 </script>
