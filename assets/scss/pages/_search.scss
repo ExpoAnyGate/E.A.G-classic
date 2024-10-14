@@ -13,6 +13,7 @@
     }
 }
 
+
 .img-240 {
     height: 240px;
     overflow: hidden;
@@ -28,6 +29,25 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+.search-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); //初始的模糊黑色陰影
+    transition: 0.4s; //滑鼠移開 確保過渡效果平滑
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); // 陰影更模糊且更淡
+        transition: 0.4s; 
+
+        // img放大
+        .img-enlarge {
+            transform: scale(1.05);
+            transition: 0.4s;
+        }
+    }
+}
+
 
 .title-font-size-lg {
     font-size: 30px;
