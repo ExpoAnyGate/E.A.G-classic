@@ -10,10 +10,10 @@
     <%- include('./layout/navbar'); -%> 
     <%- include('./layout/search-bar'); -%>
      <section class="container mt-17 mb-17">
-      <div class="row gx-6 h-100 mb-6"> <!-- style="border: 1px solid red;" -->
-        <!-- 左 -->
+      <div class="row gx-6 h-100 mb-6" style="border: 1px solid red;" > <!-- style="border: 1px solid red;" -->
+        <!-- 左 大圖區塊-->
         <div class="col-lg-8 col-sm-12 focus-card">
-          <div class="d-flex flex-column h-100">
+          <div class="d-flex flex-column h-100 search-card rounded-4">
           <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
             <p class="mb-0">2024/8/15 - 2024/9/15</p>
             <div class="d-flex align-items-center">
@@ -23,8 +23,11 @@
           </div>
           <!-- 圖＋文 -->
           <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
+           
             <div class="card mx-auto py-0 no-border">
-              <img src="../assets/images/demo-origin-6.png" class="card-img-top rounded-4" alt="...">
+              <div  class="overflow-hidden rounded-4">
+                <img src="../assets/images/demo-origin-6.png" class="card-img-top rounded-4 img-enlarge object-fit-cover" alt="...">
+              </div>
               <div class="card-body pb-0">
                 <div class="card-title">
                   <div class="d-flex align-items-center">
@@ -51,82 +54,84 @@
           </div>
           </div>
         </div>
-        <!-- 右 card-->
+        <!-- 右區塊-->
         <div class="col-lg-4 col-sm-12">
-          <div class="row h-100" > 
+          <div class="h-100 row">
             <!-- 右上 -->
-            <div class="rightT mb-6 d-flex flex-column">
-              <!-- style="border: 1px solid green" -->
-              <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
-                <p class="mb-0">2024/8/15 - 2024/9/15</p>
-                <div class="d-flex align-items-center">
-                  <span class="material-symbols-outlined fs-6 px-0">location_on</span>
-                  <p class="mb-0 nowrap">台北市</p>
-                </div>    
-              </div>
-              <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
-                <div class="card mx-auto py-0 no-border">
-                  <div class="img-240">
-                     <img src="../assets/images/demo-origin-3.png" class="card-img-top rounded-4 w-100" alt="...">
+            <!--要用div把search-card包起 陰影才會貼齊border?-->
+            <div class="">
+              <div class="rightT mb-6 d-flex flex-column rounded-4 search-card">
+                <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
+                  <p class="mb-0">2024/8/15 - 2024/9/15</p>
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                    <p class="mb-0 nowrap">台北市</p>
                   </div>
-                  <div class="card-body pb-0">
-                    <div class="card-title">
-                      <div class="d-flex align-items-center">
-                        <h3 class="fw-700 title-font-size">現代設計的未來：數位藝術展</h3>
-                        <span class="material-symbols-outlined title-font-size">
-                          bookmark_add
-                        </span>
+                </div>
+                <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
+                  <div class="card mx-auto py-0 no-border">
+                    <div class="img-240 rounded-4">
+                      <img src="../assets/images/demo-origin-3.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
+                    </div>
+                    <div class="card-body pb-0">
+                      <div class="card-title">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fw-700 title-font-size">現代設計的未來：數位藝術展</h3>
+                          <span class="material-symbols-outlined title-font-size">
+                            bookmark_add
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-tag">
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
                       </div>
                     </div>
-                    <div class="card-tag">
-                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
-                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
-                    </div>        
                   </div>
                 </div>
               </div>
-              
             </div>
             <!-- 右下 -->
-            <!-- style="border: 1px solid rgb(12, 18, 199);" -->
-            <div class="rightB d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
-                <p class="mb-0">2024/8/15 - 2024/9/15</p>
-                <div class="d-flex align-items-center">
-                  <span class="material-symbols-outlined fs-6 px-0">location_on</span>
-                  <p class="mb-0 nowrap">台北市</p>
-                </div>
-              </div>
-              <div class="border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
-                <div class="card mx-auto py-0 no-border">
-                  <div class="img-240">
-                   <img src="../assets/images/demo-origin-7.png" class="card-img-top rounded-4" alt="...">
+            <div>
+              <div class="rightB d-flex flex-column search-card rounded-4">
+                <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
+                  <p class="mb-0">2024/8/15 - 2024/9/15</p>
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                    <p class="mb-0 nowrap">台北市</p>
                   </div>
-                  <div class="card-body pb-0">
-                    <div class="card-title">
-                      <div class="d-flex align-items-center">
-                        <h3 class="fw-700 title-font-size">光影交錯：攝影藝術展</h3>
-                        <span class="material-symbols-outlined title-font-size">
-                          bookmark_add
-                        </span>
+                </div>
+                <div class="border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
+                  <div class="card mx-auto py-0 no-border">
+                    <div class="img-240 rounded-4">
+                      <img src="../assets/images/demo-origin-7.png" class="card-img-top rounded-4 img-enlarge" alt="...">
+                    </div>
+                    <div class="card-body pb-0">
+                      <div class="card-title">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fw-700 title-font-size">光影交錯：攝影藝術展</h3>
+                          <span class="material-symbols-outlined title-font-size">
+                            bookmark_add
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-tag">
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
                       </div>
                     </div>
-                    <div class="card-tag">
-                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
-                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
-                    </div>
                   </div>
                 </div>
               </div>
-            
             </div>
-          </div> 
+
+          </div>
         </div>
       </div>
       <!-- card -->
       <div class="row h-100">
         <div class="col-lg-4">
-          <div class=" mb-6 d-flex flex-column">
+          <div class=" mb-6 d-flex flex-column rounded-4 search-card">
             <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
               <p class="mb-0">2024/8/15 - 2024/9/15</p>
               <div class="d-flex align-items-center">
@@ -135,9 +140,9 @@
               </div>
             </div>
             <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
-              <div class="card mx-auto py-0 no-border">
-                <div class="img-240">
-                  <img src="../assets/images/demo-origin-12.png" class="card-img-top rounded-4 w-100" alt="...">
+              <div class="card mx-auto py-0 no-border rounded-4">
+                <div class="img-240 rounded-4">
+                  <img src="../assets/images/demo-origin-12.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
                 </div>
                 <div class="card-body pb-0">
                   <div class="card-title">
@@ -159,7 +164,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class=" mb-6 d-flex flex-column">
+          <div class=" mb-6 d-flex flex-column rounded-4 search-card">
             <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
               <p class="mb-0">2024/8/15 - 2024/9/15</p>
               <div class="d-flex align-items-center">
@@ -168,9 +173,9 @@
               </div>
             </div>
             <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
-              <div class="card mx-auto py-0 no-border">
-                <div class="img-240">
-                  <img src="../assets/images/demo-origin-1.png" class="card-img-top rounded-4 w-100" alt="...">
+              <div class="card mx-auto py-0 no-border rounded-4">
+                <div class="img-240 rounded-4">
+                  <img src="../assets/images/demo-origin-1.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
                 </div>
                 <div class="card-body pb-0">
                   <div class="card-title">
@@ -192,7 +197,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class=" mb-6 d-flex flex-column">
+          <div class=" mb-6 d-flex flex-column rounded-4 search-card">
             <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
               <p class="mb-0">2024/8/15 - 2024/9/15</p>
               <div class="d-flex align-items-center">
@@ -201,9 +206,9 @@
               </div>
             </div>
             <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
-              <div class="card mx-auto py-0 no-border">
-                <div class="img-240">
-                  <img src="../assets/images/demo-origin-10.png" class="card-img-top rounded-4 w-100" alt="...">
+              <div class="card mx-auto py-0 no-border rounded-4">
+                <div class="img-240 rounded-4">
+                  <img src="../assets/images/demo-origin-10.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
                 </div>
                 <div class="card-body pb-0">
                   <div class="card-title">
@@ -227,9 +232,9 @@
      </section>
      <!-- 分頁 -->
       <div class="container">
-        <div class="d-flex justify-content-center mb-17">
+        <div class="mb-17">
         <nav aria-label="Page navigation example">
-          <ul class="pagination d-flex justify-content-center ">
+          <ul class="pagination justify-content-center ">
             <li class="page-item preBtn">
               <a class="page-link mobile-pre d-flex align-items-center" href="#" aria-label="Previous">
                 <span class="material-symbols-outlined fs-12">
