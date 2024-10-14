@@ -230,7 +230,7 @@
     }
 
     .linegp-position-sm-2{
-        width: 110vw;
+        width: 120vw;
         position: absolute;
         left: 0;
         top:10%;
@@ -241,7 +241,7 @@
     }
 
     .linegp-position-sm-1{
-        width: 110vw;
+        width: 120vw;
         position: absolute;
         left: 0;
         top:50%;
@@ -252,12 +252,12 @@
     }
 
     .linegp-position-sm-3{
-        width: 110vw;
+        width: 120vw;
         position: absolute;
         left: 0;
         bottom:0;
         &-transform {
-            transform: translate(-15%,-200%);
+            transform: translate(-15%,-150%);
             z-index: 1;
         }
     }
@@ -281,6 +281,15 @@
         text-overflow: ellipsis;
     }
 
+    .round-position-sm-right {
+        width: 110vw;
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translate(30%,0%);
+        z-index: 1;
+    }
+
     .round-position-lg-left {
         position: absolute;
         left: 0;
@@ -296,6 +305,8 @@
         transform: translate(60%,-80%);
         z-index: 1;
     }
+
+
 }
 
 
