@@ -5,14 +5,6 @@
 ----------------------- */
 $star: #FAC612;
 
-/* _base 全站設定  
------------------------ */
-*, *::before, *::after {
-	box-sizing: border-box;
-	 //outline:1px solid $secondary-500;
-}
-
-
 .eval-sidebar {
 	position: fixed;
 	top: 0;
