@@ -22,7 +22,7 @@
 .large-demo-card{
 	width: 100%;
 	@include media-breakpoint-up(xl) {
-        width: 70%;
+        width: 65%;
     }
 }
 
@@ -127,7 +127,7 @@ ol.demo-notice{
 
 	@include media-breakpoint-up(md) {
 		display: block;
-        width: 30%;
+        width: 35%;
     }
 }
 
@@ -145,7 +145,7 @@ ol.demo-notice{
 .main-demo{
 	width: 100%;
 	@include media-breakpoint-up(xl) {
-		width: 70%;
+		width: 65%;
 	}
 }
 .other-info{
@@ -153,7 +153,7 @@ ol.demo-notice{
 	display: none;
 @include media-breakpoint-up(xl) {
 		display: flex;
-		width: 30%;
+		width: 35%;
 }
 }
 
@@ -181,4 +181,43 @@ ol.demo-notice{
 
     height: auto;
     z-index: 1; 
+}
+
+.percentage{
+	width: 30px;
+	text-align: right;
+}
+
+.kid-star {
+  color: #F19E39; 
+  user-select: none; 
+	cursor: pointer;   
+	font-size: 24px;
+}
+
+.demo-favorite{
+	color: #E51110;
+
+}
+
+
+
+.demo-bookmark{
+	user-select: none; 
+    cursor: pointer;   
+}
+
+.demo-bookmark-added{
+	color: #EAC452;
+
+}
+
+.demo-button:hover{
+    background-color: $gray-000;
+    color:$gray-900;
+}
+
+.demo-delete{
+	user-select: none; 
+    cursor: pointer;
 }
