@@ -18,11 +18,7 @@
 					<div class="demo-card-header d-flex">
 							<div class="demo-title d-flex align-items-center">
 								<p class="fs-12 fw-bold me-2">現代藝術展</p>
-								<a href="#">
-									<img
-									src="../assets/images/icon/Bookmark_add.png"
-									alt="Bookmark_add"/>
-								</a>
+								<span id="bookmark-icon" class="material-symbols-outlined fs-6 px-0 demo-bookmark">bookmark_add</span>
 							</div>
 							<ul class="demo-tags d-flex align-items-center gap-3 fs-3 ">
 							<li>
@@ -37,27 +33,19 @@
 	
 					<ul class="demo-info d-flex flex-column gap-3 mt-6">
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="../assets/images/icon/Calendar.png"
-								alt="Calendar"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">calendar_month</span>
 							<span>2024/8/15 - 2024/9/15</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="../assets/images/icon/Access_time.png"
-								alt="Access_time"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">schedule</span>
 							<span>09:00-18:00</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="../assets/images/icon/location_outlined.png"
-								alt="location_outlined"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
 							<span>台北市中區繼光街59號</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="../assets/images/icon/earth.png"
-								alt="earth"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">public</span>
 							<span>http:123456789.com</span>
 						</li>
 					</ul>
@@ -68,22 +56,22 @@
 	
 					<ul class="action-icons d-flex gap-6 mt-6">
 						<li class="d-flex align-items-center gap-2">
-							<img
-								src="../assets/images/icon/heart-filled.png"
-								alt="location_outlined"/>
+							<span class="material-symbols-outlined p-0 demo-favorite fs-6">
+								favorite
+								</span>
 							<span>1,200</span>
 						</li>
 						<li class="d-flex align-items-center gap-2">
-							<img
-								src="../assets/images/icon/eye-filled.png"
-								alt="earth"/>
+							<span class="material-symbols-rounded p-0 fs-6">
+								visibility
+								</span>
 							<span>15,000</span>
 						</li>
 					</ul>
 	
-					<button class="btn btn-gray-700 mt-8 rounded-8 w-100">
+					<a class="btn btn-gray-700 mt-8 rounded-8 w-100 demo-button">
 						我要參加
-					</button>
+					</a>
 	
 	
 				</div>
@@ -226,5 +214,68 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+	<script>
+		const icon = document.getElementById('bookmark-icon');
+
+		icon.addEventListener('click', function() {
+			console.log(icon.textContent);
+			if (icon.textContent.trim() === 'bookmark_add') {
+			icon.textContent = 'bookmark_added'; 
+			icon.classList.remove('material-symbols-outlined');
+			icon.classList.add('material-symbols-rounded'); 
+			icon.classList.add('demo-bookmark-added');
+			} else {
+			
+			icon.textContent = 'bookmark_add';
+			icon.classList.remove('material-symbols-rounded');
+			icon.classList.remove('demo-bookmark-added');
+			icon.classList.add('material-symbols-outlined'); 
+			}
+		});
+
+
+		const deleteButtons = document.querySelectorAll('.demo-delete');
+		const stars = document.querySelectorAll('.kid-star-btn');
+		const totalStars = stars.length / 2;
+		const ratingStatus = document.querySelectorAll('.rating-status');
+
+		deleteButtons.forEach((button, index) => {
+
+			button.addEventListener('click', function() {
+			console.log(index);
+			stars.forEach(star => {
+				ratingStatus.forEach(status => {
+					status.textContent = '尚未評價過'; 
+				});
+				star.classList.remove('material-symbols-rounded');
+				star.classList.add('material-symbols-outlined');
+			});
+			});
+		});
+
+		stars.forEach((star, index) => {
+			star.addEventListener('click', function() {
+				const isSmallScreen = index < totalStars; 
+				const clickedIndex = isSmallScreen ? index : index - totalStars; 
+
+				stars.forEach((s, i) => {
+					if (i < totalStars || i >= totalStars) {
+						if (i % totalStars <= clickedIndex) {
+						s.classList.remove('material-symbols-outlined');
+						s.classList.add('material-symbols-rounded');
+						} else {
+						s.classList.remove('material-symbols-rounded');
+						s.classList.add('material-symbols-outlined');
+						}
+					}
+				});
+
+				ratingStatus.forEach(status => {
+					status.textContent = '已經評價過'; 
+				});
+			});
+		});
+
+	</script>
   </body>
 </html>
