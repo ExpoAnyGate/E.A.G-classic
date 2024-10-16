@@ -58,12 +58,11 @@
 }
 
 .demo-card-header{
-
+	flex-direction: column;
     gap: 24px;
 	justify-content: space-between;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         flex-direction: row;
-        justify-content: space-between;
     }
 }
 
