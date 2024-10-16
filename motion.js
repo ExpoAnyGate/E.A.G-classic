@@ -18,7 +18,7 @@ let myrecommend = new Swiper(".myrecommend", {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
-  centeredSlides: true, 
+  // centeredSlides: true, 
 });
 
 
