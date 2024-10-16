@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
-    <script type="module" crossorigin src="/E.A.G-primary/assets/main-2b80b766.js"></script>
-    <link rel="stylesheet" href="/E.A.G-primary/assets/main-3166f555.css">
+    <script type="module" crossorigin src="/E.A.G-primary/assets/main-e3c88360.js"></script>
+    <link rel="stylesheet" href="/E.A.G-primary/assets/main-a7f66e29.css">
   </head>
   <body>
     <nav class="bg-white position-breakpoint">
@@ -312,7 +312,9 @@
             >
           </li>
           <li>
-            <a class="dropdown-item p-item d-flex align-items-center" href="#"
+            <a
+              class="dropdown-item p-item d-flex align-items-center"
+              href="evaluate.html"
               ><img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFVSURBVHgB7VRLToRAEG0YSFjiDXBHAgs8gRzBGxhP4HgCvcF4A/UGzA30BMMOEhbTN5ANhPD1VUJvcJxuJNFMMi8pilRXvdddBc3YGf8NTSXJdV1ntVq9aJoWDMNgw6K+7x/SNOWLBYjcMIwdEU+W8q7rrmQiOpNA1/XNSP5WFMUFSC/pHWbTqaT1sgS05YY8iJ845znt2DTN9bgcLBYAcnpYlpWLQFVVol22rFhFIKZH0zQbmgdArXmkGFq3lRUrDRmEOzbZLVqXt227fMhEQF8LCCNBDPeuQv4nONoitCfEZ3qN14B+MnhnXOJkmMEHZhNlWRbPEiDicZDhZImP3pnE47qu7w4JfRPwPO8W7lUUYudbXAtRWZac/gOR5/t+iBPQqe6FIF0fSZI8s2OAwB42wNZMEZQ71nyqJFPins2E2Ng0bvyQ7/xCxDkUNOYWnHF6+AKg0Zlxq8PnTQAAAABJRU5ErkJggg=="
                 class="me-4"
@@ -350,11 +352,7 @@
 					<div class="demo-card-header d-flex">
 							<div class="demo-title d-flex align-items-center">
 								<p class="fs-12 fw-bold me-2">現代藝術展</p>
-								<a href="#">
-									<img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD5SURBVHgB7ZS7DYMwEEBt44oqI7jks0QyQbIBbBA2CNmAbBA2yAawQSokSo9AQYucc0GEkG3+BRKvse98Hx9nDqGDAbBK6ft+gDFOhBAn1XlRFLhnL1R6CUFqYl3wqegq0N5IZden60fQxlC0gPamc3qwGosqaDH1avMKVkkge6B7UfuoYD8JGGOTx8eoZyoD27Z9J4RE0MwKVHnTNM+yLPmQr3EWQZCLZVkP2J41/m+wScEmk4LqfzAm+BthXMF0/cCaShn2ISxB30+VwPiJZGBYXnVdJ5zzqnOUO44TU0ojSHYFmaEpQAWZ67q3sfae54Xg80UHc/gBjLxaAZk40V8AAAAASUVORK5CYII="
-									alt="Bookmark_add"/>
-								</a>
+								<span id="bookmark-icon" class="material-symbols-outlined fs-6 px-0 demo-bookmark">bookmark_add</span>
 							</div>
 							<ul class="demo-tags d-flex align-items-center gap-3 fs-3 ">
 							<li>
@@ -369,27 +367,19 @@
 	
 					<ul class="demo-info d-flex flex-column gap-3 mt-6">
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACeSURBVHgB7ZXLDYAgDEBb4wCM4J2hnMENdANXcCjujuAGWA4m2BCQjzEQX9JDS9NSSlOAZpFSaiO5fh28DNoK3WRExFVrLSCNnWRWSm2XgVcwZwQ3DCSrbegcDrkIX4Li1J+gdxnpFyAk4JqHb5+IT2lIj05Qgt53yHsR0l38PQhSfw94BQeJeLLJPOy2cquAdsHEHWKgZXVQjAWa4gRKfkS6Dd3u/AAAAABJRU5ErkJggg=="
-								alt="Calendar"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">calendar_month</span>
 							<span>2024/8/15 - 2024/9/15</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEcSURBVHgB3VXtDYIwEH1xAjaQDWQTGeGcADYAJ4ANdANwAkbQDXADRtA2XsMZS1vAX7zk5ZLex+v1E9g6IsVcsVHsFV/MO48RVoAUB1F0ij0WCFWiQIdPF7HwJ1xUdlUgEAUnDFzYhxxjp5UvmETxBOFIhEjqCjQtT81c+8oJXy4mF9kCCOOmYYGARscxZAZ2wnlke8Zy3NimNgGz5g8sR8v2YHOa4+aCb4mcdUIF9B7FoQJyiZ5s947kE1stUlmEnMvcwH1EJUrYnwni8daWZM5xhzDEilfFixgz94hsCfpymNsY0oXM08jgv0d/eSrIF1xj3mOXieIlAmFE5EbKjmIW70RcjZkgfL/3U9SzT7EChN8vs8f4ZUbYNN7qonagGZWKjgAAAABJRU5ErkJggg=="
-								alt="Access_time"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">schedule</span>
 							<span>09:00-18:00</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB5VU7bsJAEF3zkSLRuIF6KZAQUJgupdOlCzkB5ASBMhVwAzhBzAnidEllbhAX/CSKUEYCKbThI/IG1tHG2KyTLspI4x3mv/NZGPvroKkU8vm8GY/Hr0BWgFywXcLtdtueTCazXwXgnOupVKoJss5Og5VMJhuu6y6DhLETzh1yrmnaEthGttnhcKgR7na7MnhdyMlpbb1eO4Zh6CzqDYrF4j0ZAmdwfBFWBpSPo3yUCEdQezQaXSsDlEolE8oOZb7ZbMqqGosgLyB1kUxflh+VCM6r4rRVzglIR5SLxWKxql8e1AODPqvVqiszUbYqbveO85Von02fPghkRg4wnU5dH7+FW1EjObAjCxKJhKfLowQIA3lKvo1k2IiGBZjRJ5fLGTIT2TdIRs0H3ZZlhULB0/XfmiX8DBg/wsktlqciG2AELRwWCwDSDwtwdANMgu0ZhS2PDDSmOEyiMaY9ZYDBYNBnh6nQsaFNpgDsAOlwoOXfgcAAIpMbdmhkPWAkvwBjS6WpUV/o4QtMIIi5WCyWmUzmA+Ql0Eyn08/z+fxN1hGNtcXPu/F4/BTkK3RM8ah1xIbqOB1R6z0QDd4D0TRRpBvmR/l/gBJZOKhM+4ePeN4DB+zBee2UvTKALwg93UxstNL5PhkWAVB/Gz3JgjwHnkV1/mPA1LTQ3Bb7V/AJCR7bZvoItEgAAAAASUVORK5CYII="
-								alt="location_outlined"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
 							<span>台北市中區繼光街59號</span>
 						</li>
 						<li class="d-flex align-items-center gap-3">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgB3ZXvDYIwEMVfnIANdIRuIk5gN5ANwAlgBDcwTsAIuEF1AkbAgm241to/8I1fcinh4L1eaQ9g62QyuIy7DCFjUNGpexwryGX0RPRfiCVGdYSwFtfXZax4mSA+UpBK65A4jxTvYS4LIya5z0AEhH0UxDzDwtmHaNVzXN/YkeQx8PILYR5qdC5Tp9xvSJs15QBzAxhQwQrLDGwdb6JC3DaNNtA7aJ9gYsMwt5IJ+pGfajxZBlfEw9T4diW5cm8dudgK9CpwR246HPo0FlbO1/RG0bOMC/zfZiLHfBoZzOoE/K1j8M2e0pCX7EpCJ71CJBV++z0LiDdIhCPc/HSlOVbA8f09djCr0r/MDJvmA8VXwq8F1/nXAAAAAElFTkSuQmCC"
-								alt="earth"/>
+							<span class="material-symbols-outlined fs-6 px-0 py-0">public</span>
 							<span>http:123456789.com</span>
 						</li>
 					</ul>
@@ -400,77 +390,77 @@
 	
 					<ul class="action-icons d-flex gap-6 mt-6">
 						<li class="d-flex align-items-center gap-2">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEfSURBVHgB7ZXNbcJAEIU/W8md3GMp6SApISVQQUIlSTpIKkioBOiADowEd/YOkpnBPwzWGmxYDkh8kuWd0fg9djys4UZXUnhawN8clnJletdY82WNxC/HakoiG0jRewY/suw1+H/J5chrvIjgxyMMTbz75Xfb29m4Nbw+w0yDuMzewydh6FmtagfaR5pb0xWXwIMuYutMOCota+AIh/MZjAmETOLEZ/BLICIzxpVBku9gzJmI+H9idOwOkPkdRMX8nig+W8F3LbePHgPSwxHdp8qJ2Jv8i6c2GderioI+3enXxb0GivYwy03ajK6T2kHS8P6iQ0+2aJe3LZaYA+iDKuB78Zo7Jt6a4huRFmd/pmvf2R/E5CLi1iQNeyheARsKk1lPm3CNBwAAAABJRU5ErkJggg=="
-								alt="location_outlined"/>
+							<span class="material-symbols-outlined p-0 demo-favorite fs-6">
+								favorite
+								</span>
 							<span>1,200</span>
 						</li>
 						<li class="d-flex align-items-center gap-2">
-							<img
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIMSURBVHgB7VS7UsJQEL0JjwIo4jA8OrHjORM7O+MXiF9A/AL1Cxi/QEs7oLQyfIHY2RkLHjMUhlJoUkDD07MxyWSSK4OVhexMJnv37p7de+7uZWwvfy3Cts1cLifFYrErQRAUWtofw9rcbDY61PZqtdIGg4HxqwT5fD4XDofvAFJlu0kTiW55iUJ+Q6lUqoVCIQ3gMttdZFEU1VQq9TmZTHTvhuhdlMvlOlUDcMkH0AEtZ7PZ7KDb7Qqkk83nI8HeKBaLda/RpahQKFRRxRMLSgugKilEHaiQhsOhVSVO28Sv5g9Yr9cX/X5fcxNQIGh5ZvYlesRA1cekxONxSq6QjhNq0Wj0kvTFYvFB1fvizEgkcqTrumlRBPA6B5ykYxiGCXDVAbeqEoTqfD6/JgBU2+bESbRPinMHCseJKh3Z/1POtmwnM3ixsNfcBFi0GF8OLSdRfOck79ixhz/Efu9bpciytI1LUnDkBlHjBONuLkgBfW+Mc3dohjOaC7eLKpVKFXzyuqiJLrIuFC0ow8d0Bgpd1MBP9Qd4u8gdtPF4PMhkMpRQ8fnL6XRaSSaTIwS9JhIJls1mT+BL4IFJB3W38Htw1oGnAlWqoOKOBenaKvQ+ofKbXq/X9NoDTwWNOqp9xMUeMLtTdgDXlssl0dIJ7G0LtAeQaDgHiOx5Qgz6YHuZTqf3NCtsL/9XvgDhZt6Q188gfQAAAABJRU5ErkJggg=="
-								alt="earth"/>
+							<span class="material-symbols-rounded p-0 fs-6">
+								visibility
+								</span>
 							<span>15,000</span>
 						</li>
 					</ul>
 	
-					<button class="btn btn-gray-700 mt-8 rounded-8 w-100">
+					<a class="btn btn-gray-700 mt-8 rounded-8 w-100 demo-button">
 						我要參加
-					</button>
+					</a>
 	
 	
 				</div>
 	
 				<div class="main-demo-special">
 					<div class="sub-sponsor d-flex align-items-center gap-6">
-	<div class="score-info d-flex flex-column border border-gray-700 rounded-3 p-6 ">
+	<div class="score-info d-flex flex-column border border-gray-700 rounded-3 p-6">
 		<div class="demo-score d-flex justify-content-between">
 		<div class="average d-flex flex-column gap-2 justify-content-center align-items-center">
 			<p class="fs-12 fw-700">4.8</p>
 			<div class="rate_count d-flex gap-2">
-			<p class="fs-3">52,536</p>
-			<p class="fs-3">人評論</p>
+				<p class="fs-3">52,536</p>
+				<p class="fs-3 nowrap">人評論</p>
 			</div>
 			
 		</div>
 
 		<div class="stars-group d-flex flex-column align-items-end gap-2">
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">63%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">21%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">7%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">5%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">4%</div>
 			</div>
@@ -484,20 +474,17 @@
 		<div class="user-score d-flex justify-content-between align-items-center">
 		<div class="user-rate d-flex gap-4 align-items-center">
 			<img src="data:image/png;base64,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" alt="">
-			<p class="fs-3">已經評價過</p>
+			<p class="fs-3 nowrap rating-status">已經評價過</p>
 			<div class="star d-flex align-items-center gap-3">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
 			</div>
 		</div>
-		<a href="#">
-			<img
-			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABlSURBVHgB7ZXRCYAwDEQv4iCO5uZ1A90gVshXrakG+1G4B0ehF3IkPwHIDyxZKUsLJfNc5OFfEePWb8LoiON9XVO1V/cVzS9qpOG7k3afgAEMYIAfcNirDV1sCLCifmhK7VZLYpy5Jx1n9jZqSgAAAABJRU5ErkJggg=="
-			alt="bin_outline"/>
-		</a>
+		<span class="material-symbols-outlined fs-6 p-0 align-items-center demo-delete">delete</span>
+
 		</div>
 
 	</div>
@@ -618,55 +605,55 @@
 			<div class="other-info">
 				<div class="d-flex flex-column gap-4">
 					<div class="sub-sponsor d-flex align-items-center gap-6">
-	<div class="score-info d-flex flex-column border border-gray-700 rounded-3 p-6 ">
+	<div class="score-info d-flex flex-column border border-gray-700 rounded-3 p-6">
 		<div class="demo-score d-flex justify-content-between">
 		<div class="average d-flex flex-column gap-2 justify-content-center align-items-center">
 			<p class="fs-12 fw-700">4.8</p>
 			<div class="rate_count d-flex gap-2">
-			<p class="fs-3">52,536</p>
-			<p class="fs-3">人評論</p>
+				<p class="fs-3">52,536</p>
+				<p class="fs-3 nowrap">人評論</p>
 			</div>
 			
 		</div>
 
 		<div class="stars-group d-flex flex-column align-items-end gap-2">
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">63%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">21%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">7%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">5%</div>
 			</div>
-			<div class="stars d-flex gap-4">
+			<div class="stars d-flex gap-3">
 			<div class="star d-flex align-items-center gap-4">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star">kid_star</span>
 			</div>
 			<div class="percentage">4%</div>
 			</div>
@@ -680,20 +667,17 @@
 		<div class="user-score d-flex justify-content-between align-items-center">
 		<div class="user-rate d-flex gap-4 align-items-center">
 			<img src="data:image/png;base64,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" alt="">
-			<p class="fs-3">已經評價過</p>
+			<p class="fs-3 nowrap rating-status">已經評價過</p>
 			<div class="star d-flex align-items-center gap-3">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
-			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgBpZTfbcIwEMbPDuWP1IdrOkDDBvQRUKUyQWEDNoBOAN0AJmiZhKhV0rfCBmQC6rcQl9i1o5YGkuIITrJyOn/+JT5/DkCB4B42wje8L6ItFREBpQOLJplrkhKTIJyjY1XoSqXsIhJ10mHsmJ6agKRCuz8p8jIdmvS0gGCwg5O//CRg6F331cNJldB0OHs9lHPETRWwtAWHWBYKECMlaRysWVIgTzKO2bYEQXUDLN1Xwn1U20h648B5EVAixrTcYlMpYQZnhmaUmmy223Lk2WPV9BGcEALgsdpaT3S+18PoFbvEos+qioVIElgsRK92x9zfUsbY4bsysiRzNeUYaAGXsnfZZst0NWObWpMFhMISTEGIewjLBSbvFhmr5Iigm1fOAPXdhWIWQvmBN0YgtaxGztdMk3EQX6HVMQLJhXxIkVwuxW25vR7qERNR14eRmje3hvv2gnv258a3//2zhB72uX+1UtrVUZi+ywo2kQs0+lDbK/LtF70mXf8G95OMi4xhmBEAAAAASUVORK5CYII=" alt="">
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
+				<span class="material-symbols-rounded p-0 kid-star kid-star-btn">kid_star</span>
 			</div>
 		</div>
-		<a href="#">
-			<img
-			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABlSURBVHgB7ZXRCYAwDEQv4iCO5uZ1A90gVshXrakG+1G4B0ehF3IkPwHIDyxZKUsLJfNc5OFfEePWb8LoiON9XVO1V/cVzS9qpOG7k3afgAEMYIAfcNirDV1sCLCifmhK7VZLYpy5Jx1n9jZqSgAAAABJRU5ErkJggg=="
-			alt="bin_outline"/>
-		</a>
+		<span class="material-symbols-outlined fs-6 p-0 align-items-center demo-delete">delete</span>
+
 		</div>
 
 	</div>
@@ -732,10 +716,8 @@
 
 				
 				<div class="d-flex align-items-center">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB5VU7bsJAEF3zkSLRuIF6KZAQUJgupdOlCzkB5ASBMhVwAzhBzAnidEllbhAX/CSKUEYCKbThI/IG1tHG2KyTLspI4x3mv/NZGPvroKkU8vm8GY/Hr0BWgFywXcLtdtueTCazXwXgnOupVKoJss5Og5VMJhuu6y6DhLETzh1yrmnaEthGttnhcKgR7na7MnhdyMlpbb1eO4Zh6CzqDYrF4j0ZAmdwfBFWBpSPo3yUCEdQezQaXSsDlEolE8oOZb7ZbMqqGosgLyB1kUxflh+VCM6r4rRVzglIR5SLxWKxql8e1AODPqvVqiszUbYqbveO85Von02fPghkRg4wnU5dH7+FW1EjObAjCxKJhKfLowQIA3lKvo1k2IiGBZjRJ5fLGTIT2TdIRs0H3ZZlhULB0/XfmiX8DBg/wsktlqciG2AELRwWCwDSDwtwdANMgu0ZhS2PDDSmOEyiMaY9ZYDBYNBnh6nQsaFNpgDsAOlwoOXfgcAAIpMbdmhkPWAkvwBjS6WpUV/o4QtMIIi5WCyWmUzmA+Ql0Eyn08/z+fxN1hGNtcXPu/F4/BTkK3RM8ah1xIbqOB1R6z0QDd4D0TRRpBvmR/l/gBJZOKhM+4ePeN4DB+zBee2UvTKALwg93UxstNL5PhkWAVB/Gz3JgjwHnkV1/mPA1LTQ3Bb7V/AJCR7bZvoItEgAAAAASUVORK5CYII="
-						alt="location_outlined"/>
-					<span>台北市</span>
+					<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
+					<span class="nowrap">台北市</span>
 				</div>	
 			</div>
 
@@ -769,10 +751,8 @@
 				</div>
 				
 				<div class="d-flex align-items-center">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB5VU7bsJAEF3zkSLRuIF6KZAQUJgupdOlCzkB5ASBMhVwAzhBzAnidEllbhAX/CSKUEYCKbThI/IG1tHG2KyTLspI4x3mv/NZGPvroKkU8vm8GY/Hr0BWgFywXcLtdtueTCazXwXgnOupVKoJss5Og5VMJhuu6y6DhLETzh1yrmnaEthGttnhcKgR7na7MnhdyMlpbb1eO4Zh6CzqDYrF4j0ZAmdwfBFWBpSPo3yUCEdQezQaXSsDlEolE8oOZb7ZbMqqGosgLyB1kUxflh+VCM6r4rRVzglIR5SLxWKxql8e1AODPqvVqiszUbYqbveO85Von02fPghkRg4wnU5dH7+FW1EjObAjCxKJhKfLowQIA3lKvo1k2IiGBZjRJ5fLGTIT2TdIRs0H3ZZlhULB0/XfmiX8DBg/wsktlqciG2AELRwWCwDSDwtwdANMgu0ZhS2PDDSmOEyiMaY9ZYDBYNBnh6nQsaFNpgDsAOlwoOXfgcAAIpMbdmhkPWAkvwBjS6WpUV/o4QtMIIi5WCyWmUzmA+Ql0Eyn08/z+fxN1hGNtcXPu/F4/BTkK3RM8ah1xIbqOB1R6z0QDd4D0TRRpBvmR/l/gBJZOKhM+4ePeN4DB+zBee2UvTKALwg93UxstNL5PhkWAVB/Gz3JgjwHnkV1/mPA1LTQ3Bb7V/AJCR7bZvoItEgAAAAASUVORK5CYII="
-						alt="location_outlined"/>
-					<span>台北市</span>
+					<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
+					<span class="nowrap">台北市</span>
 				</div>	
 			</div>
 
@@ -842,10 +822,8 @@
 
 				
 				<div class="d-flex align-items-center">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB5VU7bsJAEF3zkSLRuIF6KZAQUJgupdOlCzkB5ASBMhVwAzhBzAnidEllbhAX/CSKUEYCKbThI/IG1tHG2KyTLspI4x3mv/NZGPvroKkU8vm8GY/Hr0BWgFywXcLtdtueTCazXwXgnOupVKoJss5Og5VMJhuu6y6DhLETzh1yrmnaEthGttnhcKgR7na7MnhdyMlpbb1eO4Zh6CzqDYrF4j0ZAmdwfBFWBpSPo3yUCEdQezQaXSsDlEolE8oOZb7ZbMqqGosgLyB1kUxflh+VCM6r4rRVzglIR5SLxWKxql8e1AODPqvVqiszUbYqbveO85Von02fPghkRg4wnU5dH7+FW1EjObAjCxKJhKfLowQIA3lKvo1k2IiGBZjRJ5fLGTIT2TdIRs0H3ZZlhULB0/XfmiX8DBg/wsktlqciG2AELRwWCwDSDwtwdANMgu0ZhS2PDDSmOEyiMaY9ZYDBYNBnh6nQsaFNpgDsAOlwoOXfgcAAIpMbdmhkPWAkvwBjS6WpUV/o4QtMIIi5WCyWmUzmA+Ql0Eyn08/z+fxN1hGNtcXPu/F4/BTkK3RM8ah1xIbqOB1R6z0QDd4D0TRRpBvmR/l/gBJZOKhM+4ePeN4DB+zBee2UvTKALwg93UxstNL5PhkWAVB/Gz3JgjwHnkV1/mPA1LTQ3Bb7V/AJCR7bZvoItEgAAAAASUVORK5CYII="
-						alt="location_outlined"/>
-					<span>台北市</span>
+					<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
+					<span class="nowrap">台北市</span>
 				</div>	
 			</div>
 
@@ -879,10 +857,8 @@
 				</div>
 				
 				<div class="d-flex align-items-center">
-					<img
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgB5VU7bsJAEF3zkSLRuIF6KZAQUJgupdOlCzkB5ASBMhVwAzhBzAnidEllbhAX/CSKUEYCKbThI/IG1tHG2KyTLspI4x3mv/NZGPvroKkU8vm8GY/Hr0BWgFywXcLtdtueTCazXwXgnOupVKoJss5Og5VMJhuu6y6DhLETzh1yrmnaEthGttnhcKgR7na7MnhdyMlpbb1eO4Zh6CzqDYrF4j0ZAmdwfBFWBpSPo3yUCEdQezQaXSsDlEolE8oOZb7ZbMqqGosgLyB1kUxflh+VCM6r4rRVzglIR5SLxWKxql8e1AODPqvVqiszUbYqbveO85Von02fPghkRg4wnU5dH7+FW1EjObAjCxKJhKfLowQIA3lKvo1k2IiGBZjRJ5fLGTIT2TdIRs0H3ZZlhULB0/XfmiX8DBg/wsktlqciG2AELRwWCwDSDwtwdANMgu0ZhS2PDDSmOEyiMaY9ZYDBYNBnh6nQsaFNpgDsAOlwoOXfgcAAIpMbdmhkPWAkvwBjS6WpUV/o4QtMIIi5WCyWmUzmA+Ql0Eyn08/z+fxN1hGNtcXPu/F4/BTkK3RM8ah1xIbqOB1R6z0QDd4D0TRRpBvmR/l/gBJZOKhM+4ePeN4DB+zBee2UvTKALwg93UxstNL5PhkWAVB/Gz3JgjwHnkV1/mPA1LTQ3Bb7V/AJCR7bZvoItEgAAAAASUVORK5CYII="
-						alt="location_outlined"/>
-					<span>台北市</span>
+					<span class="material-symbols-outlined fs-6 px-0 py-0">location_on</span>
+					<span class="nowrap">台北市</span>
 				</div>	
 			</div>
 
@@ -1003,5 +979,68 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
+	<script>
+		const icon = document.getElementById('bookmark-icon');
+
+		icon.addEventListener('click', function() {
+			console.log(icon.textContent);
+			if (icon.textContent.trim() === 'bookmark_add') {
+			icon.textContent = 'bookmark_added'; 
+			icon.classList.remove('material-symbols-outlined');
+			icon.classList.add('material-symbols-rounded'); 
+			icon.classList.add('demo-bookmark-added');
+			} else {
+			
+			icon.textContent = 'bookmark_add';
+			icon.classList.remove('material-symbols-rounded');
+			icon.classList.remove('demo-bookmark-added');
+			icon.classList.add('material-symbols-outlined'); 
+			}
+		});
+
+
+		const deleteButtons = document.querySelectorAll('.demo-delete');
+		const stars = document.querySelectorAll('.kid-star-btn');
+		const totalStars = stars.length / 2;
+		const ratingStatus = document.querySelectorAll('.rating-status');
+
+		deleteButtons.forEach((button, index) => {
+
+			button.addEventListener('click', function() {
+			console.log(index);
+			stars.forEach(star => {
+				ratingStatus.forEach(status => {
+					status.textContent = '尚未評價過'; 
+				});
+				star.classList.remove('material-symbols-rounded');
+				star.classList.add('material-symbols-outlined');
+			});
+			});
+		});
+
+		stars.forEach((star, index) => {
+			star.addEventListener('click', function() {
+				const isSmallScreen = index < totalStars; 
+				const clickedIndex = isSmallScreen ? index : index - totalStars; 
+
+				stars.forEach((s, i) => {
+					if (i < totalStars || i >= totalStars) {
+						if (i % totalStars <= clickedIndex) {
+						s.classList.remove('material-symbols-outlined');
+						s.classList.add('material-symbols-rounded');
+						} else {
+						s.classList.remove('material-symbols-rounded');
+						s.classList.add('material-symbols-outlined');
+						}
+					}
+				});
+
+				ratingStatus.forEach(status => {
+					status.textContent = '已經評價過'; 
+				});
+			});
+		});
+
+	</script>
   </body>
 </html>
