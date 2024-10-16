@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/E.A.G-primary/assets/main-e3c88360.js"></script>
-    <link rel="stylesheet" href="/E.A.G-primary/assets/main-a7f66e29.css">
+    <script type="module" crossorigin src="/E.A.G-primary/assets/main-b422784f.js"></script>
+    <link rel="stylesheet" href="/E.A.G-primary/assets/main-8d18a206.css">
   </head>
   <body>
     <nav class="bg-white position-breakpoint">
@@ -491,7 +491,7 @@
       <li class="col-12">
         <input
           class="form-select date px-6 py-3 fs-4 border-gray-400"
-          id="datetimepicker1"
+          id="datetimepicker-sm"
           data-td-target-input="nearest"
           data-td-target-toggle="nearest"
           placeholder="展覽日期"
@@ -512,7 +512,7 @@
       </li>
       <li class="col-12">
         <div class="d-flex justify-content-between">
-          <button type="button" class="btn btn-gray-700 w-65 py-3">搜尋</button>
+          <a href="search.html" class="btn btn-gray-700 w-65 py-3">搜尋</a>
           <button
             type="button"
             class="btn btn-gray-000 w-30 py-3 border-gray-400"
@@ -544,7 +544,7 @@
 
           <input
             class="form-select date py-3 fs-4 w-15 border-gray-400"
-            id="datetimepicker2"
+            id="datetimepicker-lg"
             data-td-target-input="nearest"
             data-td-target-toggle="nearest"
             placeholder="展覽日期"
@@ -600,12 +600,44 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0-beta2/js/tempus-dominus.min.js"></script>
+
 <script>
-  new tempusDominus.TempusDominus(document.getElementById("datetimepicker1"), {
-    multipleDates: true,
-  });
-  new tempusDominus.TempusDominus(document.getElementById("datetimepicker2"), {
-    multipleDates: true,
+  document.addEventListener("DOMContentLoaded", function () {
+    const pickerSM = new tempusDominus.TempusDominus(
+      document.getElementById("datetimepicker-sm"),
+      {
+        multipleDates: true, // 允許選擇多個日期
+        display: {
+          components: {
+            calendar: true,
+            date: true,
+            month: true,
+            year: false,
+            clock: false,
+            hours: false,
+            minutes: false,
+          },
+        },
+      }
+    );
+
+    const pickerLG = new tempusDominus.TempusDominus(
+      document.getElementById("datetimepicker-lg"),
+      {
+        multipleDates: true, // 允許選擇多個日期
+        display: {
+          components: {
+            calendar: true,
+            date: true,
+            month: true,
+            year: false,
+            clock: false,
+            hours: false,
+            minutes: false,
+          },
+        },
+      }
+    );
   });
 </script>
 
