@@ -66,11 +66,22 @@
     }
 }
 
+.user-rate{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    @include media-breakpoint-up(sm) {
+        flex-direction: row;
+    }
+}
 
 .demo-score{
-    gap:30px;
-	@include media-breakpoint-up(md) {
-        gap:10px;
+    gap:10px;
+	flex-direction: column;
+	@include media-breakpoint-up(sm) {
+        gap:0px;
+		justify-content: space-between;
+		flex-direction: row;
     }
 }
 
