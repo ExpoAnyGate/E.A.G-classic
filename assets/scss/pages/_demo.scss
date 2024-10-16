@@ -66,11 +66,21 @@
     }
 }
 
+
+
+.user-score{
+	align-items: center;
+	justify-content: space-around;
+    @include media-breakpoint-up(xs) {
+		justify-content: space-between;
+    }
+}
+
+
 .user-rate{
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(xs) {
         flex-direction: row;
     }
 }
@@ -78,9 +88,8 @@
 .demo-score{
     gap:10px;
 	flex-direction: column;
-	@include media-breakpoint-up(sm) {
+	@include media-breakpoint-up(xs) {
         gap:0px;
-		justify-content: space-between;
 		flex-direction: row;
     }
 }
