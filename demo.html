@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
-    <script type="module" crossorigin src="/E.A.G-primary/assets/main-b422784f.js"></script>
+    <script type="module" crossorigin src="/E.A.G-primary/assets/main-454c896d.js"></script>
     <link rel="stylesheet" href="/E.A.G-primary/assets/main-8d18a206.css">
   </head>
   <body>
@@ -17,7 +17,7 @@
       </a>
 
       <!-- Button trigger modal -->
-      <div id="loginDisplayNone">
+      <div class="dropdown-login" id="loginDisplayNone">
         <button
           type="button"
           class="btn btn-white border border-gray-400 rounded-3 login-btn py-2 px-4 login-btn"
@@ -169,6 +169,7 @@
                         type="summit"
                         class="btn btn-primary-600 text-gray-000 w-50 py-3 ms-3"
                         data-bs-dismiss="modal"
+						id="login-btn"
                         onclick="changeLogin()"
                         aria-label="Close"
                       >
@@ -205,6 +206,7 @@
                     <div class="text-center">
                       <button
                         class="btn btn-danger text-white fw-500 py-2 btn-google"
+						id="login-button"
                       >
                         <i class="bi bi-google"></i>
                         透過 google 帳號登入
@@ -303,8 +305,8 @@
             >
           </li>
           <li>
-            <a class="dropdown-item p-item d-flex align-items-center" href="#"
-              ><img
+            <a id="dropdown-logout" class="dropdown-item p-item d-flex align-items-center" href="#"
+            ><img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVHgB7ZTfDYIwEMavhgEcAV9hKHUEJ7BOoBuIQ8GruIEb1O8SNDVC+rUpPvFLLqXlch/3p4gsBDASSV3XdyzlxOseZtu2vb0PVpKXEnaRuUB2Ts0/y53BD5RAVVU7NUmAEjDGnGFXiBwlEkrAOXcYhGysCCXQdV0DkX2KSOFvAjP+YRB5qHDId/Yp+soAN3Az5YjstlgafUa5TszXK1QGI8GtkLAlsinBlYJx0sBo7BrBo/8zlABb7zH+O0UMxF3p/U3WDNCnp/ZLFmJ4AapcS5E9BNQjAAAAAElFTkSuQmCC"
                 alt="Login.png"
                 class="me-4"
@@ -334,14 +336,31 @@
 
 <!-- 會員登入後 登入btn隱藏 -->
 <script>
-  function changeLogin() {
-    const unLogin = document.getElementById("loginDisplayNone");
-    unLogin.style.display = "none";
+    function changeLogin() {
+		localStorage.setItem("isLoggedIn", "true");
+		location.reload();
+  }  
 
-    const login = document.getElementById("loginDisplayBlock");
+  document.addEventListener("DOMContentLoaded", function() {
+	const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+	if (isLoggedIn === "true") {
+
+		const unLogin = document.getElementById("loginDisplayNone");
+    unLogin.style.display = "none";
+	const login = document.getElementById("loginDisplayBlock");
     login.style.display = "block";
-  }
+	} else {
+
+		const login = document.getElementById("loginDisplayBlock");
+    login.style.display = "none";
+	const unLogin = document.getElementById("loginDisplayNone");
+    unLogin.style.display = "block";
+	}
+});
+  
 </script>
+
     <div class="demo-banner mt-bp-140-0">
     </div>
 
