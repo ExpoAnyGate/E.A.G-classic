@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
-    <script type="module" crossorigin src="/E.A.G-primary/assets/main-454c896d.js"></script>
+
+    <script type="module" crossorigin src="/E.A.G-primary/assets/main-b6f13c6b.js"></script>
     <link rel="stylesheet" href="/E.A.G-primary/assets/main-8d18a206.css">
   </head>
   <body>
@@ -808,16 +809,6 @@
 		</div>
 		
 
-
-
-
-
-		
-
-
-
-
-
 		<div class="demo-map mt-17 mb-17">
 			<div class="position-relative d-inline">
 				<h2 class="fs-9 fw-700 text-gray-700 position-relative z-2 d-inline">活動地圖</h2>
@@ -827,10 +818,10 @@
 					alt="line-3"
 					/>
 			</div>
-			<img src="/E.A.G-primary/assets/map-41aef001.png" alt="" class="w-100 mt-10 ">
+
+			<iframe id="map" height="600px" allowfullscreen="" loading="lazy" class="w-100 mt-10 rounded-4 border-3 border-gray-200"></iframe>
+    
 		</div>
-
-
 
  
 		<div class="sm-showed mb-17">
@@ -1065,6 +1056,25 @@
 				});
 			});
 		});
+
+
+
+		window.onload = async function() {
+            const defaultLocation = '三創生活園區'; 
+
+            try {
+				
+                const response = await fetch(`https://vercel-api-five-iota.vercel.app/api/maps.js?location=${encodeURIComponent(defaultLocation)}`);
+                const data = await response.json();
+
+                if (data.embedUrl) {
+                    document.getElementById('map').src = data.embedUrl;
+                } 
+            } catch (error) {
+                console.error('Error loading map:', error);
+
+            }
+        }
 
 	</script>
   </body>
