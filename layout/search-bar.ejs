@@ -33,13 +33,26 @@
         </select>
       </li>
       <li class="col-12">
-        <input
-          class="form-select date px-6 py-3 fs-4 border-gray-400"
-          id="datetimepicker-sm"
+        <div
+          class="input-group w-100"
+          id="datetimepickerSM"
           data-td-target-input="nearest"
           data-td-target-toggle="nearest"
-          placeholder="展覽日期"
-        />
+        >
+          <input
+            id="datetimepicker1Input"
+            type="text"
+            class="form-control py-3 fs-4 border-gray-400"
+            data-td-target="#datetimepicker1"
+          />
+          <span
+            class="input-group-text material-symbols-outlined border-gray-400"
+            data-td-target="#datetimepicker1"
+            data-td-toggle="datetimepicker"
+          >
+            calendar_month
+          </span>
+        </div>
       </li>
       <li class="col-12">
         <form class="position-relative text-gray-500" role="search">
@@ -86,13 +99,26 @@
             <option value="高雄市">高雄市</option>
           </select>
 
-          <input
-            class="form-select date py-3 fs-4 w-15 border-gray-400"
-            id="datetimepicker-lg"
+          <div
+            class="input-group w-15"
+            id="datetimepickerLG"
             data-td-target-input="nearest"
             data-td-target-toggle="nearest"
-            placeholder="展覽日期"
-          />
+          >
+            <input
+              id="datetimepicker1Input"
+              type="text"
+              class="form-control py-3 fs-4 border-gray-400"
+              data-td-target="#datetimepicker1"
+            />
+            <span
+              class="input-group-text material-symbols-outlined border-gray-400"
+              data-td-target="#datetimepicker1"
+              data-td-toggle="datetimepicker"
+            >
+              calendar_month
+            </span>
+          </div>
 
           <select
             class="form-select py-3 fs-4 w-15 border-gray-400"
@@ -141,46 +167,69 @@
 </section>
 
 <!-- 以下為月曆的JS，其中月曆的樣式、定位、內容尚需修改 -->
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0-beta2/js/tempus-dominus.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.9.4/dist/js/tempus-dominus.min.js"
+  crossorigin="anonymous"
+></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const pickerSM = new tempusDominus.TempusDominus(
-      document.getElementById("datetimepicker-sm"),
-      {
-        multipleDates: true, // 允許選擇多個日期
-        display: {
-          components: {
-            calendar: true,
-            date: true,
-            month: true,
-            year: false,
-            clock: false,
-            hours: false,
-            minutes: false,
-          },
+  const pickerSM = new tempusDominus.TempusDominus(
+    document.getElementById("datetimepickerSM"),
+    {
+      dateRange: true,
+      display: {
+        components: {
+          calendar: true,
+          date: true,
+          month: true,
+          year: true,
+          decades: false,
+          clock: false,
+          hours: false,
+          minutes: false,
         },
-      }
-    );
+        theme: "light",
+        buttons: {
+          clear: true,
+          close: true,
+        },
+      },
+      localization: {
+        locale: "en",
+        format: "MM/dd",
+      },
+      multipleDatesSeparator: "-",
+    }
+  );
 
-    const pickerLG = new tempusDominus.TempusDominus(
-      document.getElementById("datetimepicker-lg"),
-      {
-        multipleDates: true, // 允許選擇多個日期
-        display: {
-          components: {
-            calendar: true,
-            date: true,
-            month: true,
-            year: false,
-            clock: false,
-            hours: false,
-            minutes: false,
-          },
+  const pickerLG = new tempusDominus.TempusDominus(
+    document.getElementById("datetimepickerLG"),
+    {
+      dateRange: true,
+      display: {
+        components: {
+          calendar: true,
+          date: true,
+          month: true,
+          year: true,
+          decades: false,
+          clock: false,
+          hours: false,
+          minutes: false,
         },
-      }
-    );
-  });
+        theme: "light",
+        buttons: {
+          clear: true,
+          close: true,
+        },
+      },
+      localization: {
+        locale: "en",
+        format: "MM/dd",
+      },
+      multipleDatesSeparator: "-",
+    }
+  );
 </script>
