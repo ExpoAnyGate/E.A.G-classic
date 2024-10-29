@@ -24,13 +24,10 @@
     }
 
 
-    .w-bp-20-25-30 {
+    .w-bp-20-25 {
         width: 20%;
         @include media-breakpoint-up(xl) {
             width: 25%;
-        }
-        @include media-breakpoint-up(xxl) {
-            width: 30%;
         }
     }
 }
@@ -132,7 +129,10 @@
 
     .date-container-days div:not(.no-highlight){
         width:80%;
-        height:95%;
+        height:80%;
+        @include media-breakpoint-up(sm) {
+            height:95%;
+        }
         margin-left: 0.25rem;
     }
 
