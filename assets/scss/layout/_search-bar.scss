@@ -125,13 +125,16 @@
 
     .date-container-days{
         overflow: hidden;
+        @include media-breakpoint-up(sm) {
+            row-gap: 0.5rem;
+        }
     }
 
     .date-container-days div:not(.no-highlight){
         width:80%;
         height:80%;
         @include media-breakpoint-up(sm) {
-            height:95%;
+            height:100%;
         }
         margin-left: 0.25rem;
     }
