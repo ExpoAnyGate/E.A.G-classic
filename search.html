@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/E.A.G-primary/assets/main-b6f13c6b.js"></script>
-    <link rel="stylesheet" href="/E.A.G-primary/assets/main-8d18a206.css">
+    <script type="module" crossorigin src="/E.A.G-primary/assets/main-0c87cf39.js"></script>
+    <link rel="stylesheet" href="/E.A.G-primary/assets/main-666e4ed3.css">
   </head>
   <body>
     <nav class="bg-white position-breakpoint">
@@ -169,7 +169,7 @@
                         type="summit"
                         class="btn btn-primary-600 text-gray-000 w-50 py-3 ms-3"
                         data-bs-dismiss="modal"
-						id="login-btn"
+                        id="login-btn"
                         onclick="changeLogin()"
                         aria-label="Close"
                       >
@@ -206,7 +206,7 @@
                     <div class="text-center">
                       <button
                         class="btn btn-danger text-white fw-500 py-2 btn-google"
-						id="login-button"
+                        id="login-button"
                       >
                         <i class="bi bi-google"></i>
                         透過 google 帳號登入
@@ -305,8 +305,11 @@
             >
           </li>
           <li>
-            <a id="dropdown-logout" class="dropdown-item p-item d-flex align-items-center" href="#"
-            ><img
+            <a
+              id="dropdown-logout"
+              class="dropdown-item p-item d-flex align-items-center"
+              href="#"
+              ><img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVHgB7ZTfDYIwEMavhgEcAV9hKHUEJ7BOoBuIQ8GruIEb1O8SNDVC+rUpPvFLLqXlch/3p4gsBDASSV3XdyzlxOseZtu2vb0PVpKXEnaRuUB2Ts0/y53BD5RAVVU7NUmAEjDGnGFXiBwlEkrAOXcYhGysCCXQdV0DkX2KSOFvAjP+YRB5qHDId/Yp+soAN3Az5YjstlgafUa5TszXK1QGI8GtkLAlsinBlYJx0sBo7BrBo/8zlABb7zH+O0UMxF3p/U3WDNCnp/ZLFmJ4AapcS5E9BNQjAAAAAElFTkSuQmCC"
                 alt="Login.png"
                 class="me-4"
@@ -336,31 +339,27 @@
 
 <!-- 會員登入後 登入btn隱藏 -->
 <script>
-    function changeLogin() {
-		localStorage.setItem("isLoggedIn", "true");
-		location.reload();
-  }  
+  function changeLogin() {
+    localStorage.setItem("isLoggedIn", "true");
+    location.reload();
+  }
 
-  document.addEventListener("DOMContentLoaded", function() {
-	const isLoggedIn = localStorage.getItem("isLoggedIn");
+  document.addEventListener("DOMContentLoaded", function () {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-	if (isLoggedIn === "true") {
-
-		const unLogin = document.getElementById("loginDisplayNone");
-    unLogin.style.display = "none";
-	const login = document.getElementById("loginDisplayBlock");
-    login.style.display = "block";
-	} else {
-
-		const login = document.getElementById("loginDisplayBlock");
-    login.style.display = "none";
-	const unLogin = document.getElementById("loginDisplayNone");
-    unLogin.style.display = "block";
-	}
-});
-  
+    if (isLoggedIn === "true") {
+      const unLogin = document.getElementById("loginDisplayNone");
+      unLogin.style.display = "none";
+      const login = document.getElementById("loginDisplayBlock");
+      login.style.display = "block";
+    } else {
+      const login = document.getElementById("loginDisplayBlock");
+      login.style.display = "none";
+      const unLogin = document.getElementById("loginDisplayNone");
+      unLogin.style.display = "block";
+    }
+  });
 </script>
-
  
     <section class="bg-secondary-600">
   <!-- 手機至平板版 -->
@@ -397,13 +396,26 @@
         </select>
       </li>
       <li class="col-12">
-        <input
-          class="form-select date px-6 py-3 fs-4 border-gray-400"
-          id="datetimepicker-sm"
+        <div
+          class="input-group w-100"
+          id="datetimepickerSM"
           data-td-target-input="nearest"
           data-td-target-toggle="nearest"
-          placeholder="展覽日期"
-        />
+        >
+          <input
+            id="datetimepicker1Input"
+            type="text"
+            class="form-control py-3 fs-4 border-gray-400"
+            data-td-target="#datetimepicker1"
+          />
+          <span
+            class="input-group-text material-symbols-outlined border-gray-400"
+            data-td-target="#datetimepicker1"
+            data-td-toggle="datetimepicker"
+          >
+            calendar_month
+          </span>
+        </div>
       </li>
       <li class="col-12">
         <form class="position-relative text-gray-500" role="search">
@@ -450,13 +462,26 @@
             <option value="高雄市">高雄市</option>
           </select>
 
-          <input
-            class="form-select date py-3 fs-4 w-15 border-gray-400"
-            id="datetimepicker-lg"
+          <div
+            class="input-group w-20"
+            id="datetimepickerLG"
             data-td-target-input="nearest"
             data-td-target-toggle="nearest"
-            placeholder="展覽日期"
-          />
+          >
+            <input
+              id="datetimepicker1Input"
+              type="text"
+              class="form-control py-3 fs-4 border-gray-400"
+              data-td-target="#datetimepicker1"
+            />
+            <span
+              class="input-group-text material-symbols-outlined border-gray-400"
+              data-td-target="#datetimepicker1"
+              data-td-toggle="datetimepicker"
+            >
+              calendar_month
+            </span>
+          </div>
 
           <select
             class="form-select py-3 fs-4 w-15 border-gray-400"
@@ -474,7 +499,7 @@
           </select>
 
           <form
-            class="position-relative text-gray-500 w-bp-20-25-30"
+            class="position-relative text-gray-500 w-bp-20-25"
             role="search"
           >
             <span class="material-symbols-outlined p-0 search-icon-position">
@@ -505,48 +530,71 @@
 </section>
 
 <!-- 以下為月曆的JS，其中月曆的樣式、定位、內容尚需修改 -->
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tempus-dominus/6.0.0-beta2/js/tempus-dominus.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.9.4/dist/js/tempus-dominus.min.js"
+  crossorigin="anonymous"
+></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const pickerSM = new tempusDominus.TempusDominus(
-      document.getElementById("datetimepicker-sm"),
-      {
-        multipleDates: true, // 允許選擇多個日期
-        display: {
-          components: {
-            calendar: true,
-            date: true,
-            month: true,
-            year: false,
-            clock: false,
-            hours: false,
-            minutes: false,
-          },
+  const pickerSM = new tempusDominus.TempusDominus(
+    document.getElementById("datetimepickerSM"),
+    {
+      dateRange: true,
+      display: {
+        components: {
+          calendar: true,
+          date: true,
+          month: true,
+          year: true,
+          decades: false,
+          clock: false,
+          hours: false,
+          minutes: false,
         },
-      }
-    );
+        theme: "light",
+        buttons: {
+          clear: true,
+          close: true,
+        },
+      },
+      localization: {
+        locale: "en",
+        format: "MM/dd",
+      },
+      multipleDatesSeparator: "-",
+    }
+  );
 
-    const pickerLG = new tempusDominus.TempusDominus(
-      document.getElementById("datetimepicker-lg"),
-      {
-        multipleDates: true, // 允許選擇多個日期
-        display: {
-          components: {
-            calendar: true,
-            date: true,
-            month: true,
-            year: false,
-            clock: false,
-            hours: false,
-            minutes: false,
-          },
+  const pickerLG = new tempusDominus.TempusDominus(
+    document.getElementById("datetimepickerLG"),
+    {
+      dateRange: true,
+      display: {
+        components: {
+          calendar: true,
+          date: true,
+          month: true,
+          year: true,
+          decades: false,
+          clock: false,
+          hours: false,
+          minutes: false,
         },
-      }
-    );
-  });
+        theme: "light",
+        buttons: {
+          clear: true,
+          close: true,
+        },
+      },
+      localization: {
+        locale: "en",
+        format: "MM/dd",
+      },
+      multipleDatesSeparator: "-",
+    }
+  );
 </script>
      <section class="container mt-17 mb-17">
       <div class="row gx-6 h-100 mb-6"> <!-- style="border: 1px solid red;" -->
