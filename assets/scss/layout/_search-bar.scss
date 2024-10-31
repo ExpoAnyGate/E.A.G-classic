@@ -32,9 +32,13 @@
     }
 }
 
-.tempus-dominus-widget{
+.tempus-dominus-widget.light{
     padding: 1.5rem 1rem;
     width: 20rem;
+    background-color: $gray-000;
+    color: $gray-700;
+    overflow: hidden;
+
     @include media-breakpoint-up(sm) {
         width: 23.875rem;
     }
@@ -84,25 +88,23 @@
         }
     }
 
-   &.light .toolbar {
-        div:hover{
-            background-color: $gray-700 !important;
-            color:$gray-000 !important;
-        }
-    }
-
     .toolbar{
         margin-top: 1.25rem;
         border-top: 1px solid $gray-200;
         padding-top: 1.5rem;
+
         div {
             border-radius: 0.5rem;
+            &:hover{
+                background-color: $gray-700 !important;
+                color:$gray-000 !important;
+            }
         }
     }
     
-    &.light .date-container-days div:not(.no-highlight),
-    &.light .date-container-months div:not(.no-highlight),
-    &.light .date-container-years div:not(.no-highlight)
+    .date-container-days div:not(.no-highlight),
+    .date-container-months div:not(.no-highlight),
+    .date-container-years div:not(.no-highlight)
     {
         &.old{
             color: $gray-100;
@@ -128,44 +130,35 @@
         @include media-breakpoint-up(sm) {
             row-gap: 0.5rem;
         }
-    }
 
-    .date-container-days div:not(.no-highlight){
-        width:80%;
-        height:80%;
-        @include media-breakpoint-up(sm) {
-            height:100%;
+        div:not(.no-highlight) {
+            width:80%;
+            height:80%;
+            @include media-breakpoint-up(sm) {
+                height:100%;
+            }
+            margin-left: 0.25rem;
         }
-        margin-left: 0.25rem;
-    }
 
-    &.light .date-container-days div.range-start:not(.no-highlight),
-    &.light .date-container-days div.range-end:not(.no-highlight)
-    {
-        background-color: $gray-700;
-        border-radius: 100px !important;
-        z-index: 5;
-    }
+        div.range-start:not(.no-highlight),
+        div.range-end:not(.no-highlight) {
+            background-color: $gray-700;
+            border-radius: 100px !important;
+            z-index: 5;
+        }
+        
+        .range-in {
+            background-color: $secondary-500 !important;
+            box-shadow: -5px 0 0  $secondary-500, 5px 0 0  $secondary-500;
+            border-radius: 0 !important;
+            border: 0;
+            color:$gray-700 !important;
+        }
 
-    &.light .date-container-days .range-in
-    {   
-        background-color: $secondary-500 !important;
-        box-shadow: -5px 0 0  $secondary-500, 5px 0 0  $secondary-500;
-        border-radius: 0 !important;
-        border: 0;
-        color:$gray-700 !important;
-    }
-    
-
-    &.light{
-        background-color: $gray-000;
-        color: $gray-700;
-        overflow: hidden;
-
-        .date-container-days .dow{
+        .dow {
             width: 100%;
             color: $gray-700;
         } 
-    }
+    }  
 }
 
