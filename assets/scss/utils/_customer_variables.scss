@@ -49,6 +49,15 @@ $gray-50:#F7F7F7;
 $gray-000:#FCFCFC;
 
 
+$official-good-1: #EDC67A;
+$official-good-2: #67A5C6;
+$official-good-3: #E78E85;
+$official-good-4: #FDD6C1;
+$official-good-5: #FD7EA1;  
+$official-good-6: #619F61;
+
+$gradient-gold: #DDBF48;
+$gradient-silver: #9C9894;
 
 $custom-colors: (
     "primary-1000": $primary-1000,
@@ -99,6 +108,16 @@ $custom-colors: (
     "gray-100": $gray-100,
     "gray-50": $gray-50,
     "gray-000": $gray-000
+
+    "official-good-1": $official-good-1,
+    "official-good-2": $official-good-2,
+    "official-good-3": $official-good-3,
+    "official-good-4": $official-good-4,
+    "official-good-5": $official-good-5,
+    "official-good-6": $official-good-6,
+
+    "gradient-gold": $gradient-gold,
+    "gradient-silver": $gradient-silver
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
