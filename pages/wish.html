@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E.A.G許願池</title>
+  </head>
+  <body>
+    <%- include('./layout/navbar'); -%> 
+    <!-- 頂圖 -->
+    <section class="topBanner container-fluid p-0 m-0 position-relative">
+      <div class="w-100" style="height: 900px;">
+        <img src="../assets/images/wish-lg-1.jpeg" class="w-100 h-100 object-fit-cover" alt="...">
+            <!-- 電腦版（單行）d-md-block : ≥768px（平板以上）時顯示 -->
+            <h1 class="fs-8 fw-700 position-absolute top-50 start-50 translate-middle text-white text-nowrap d-none d-md-block">
+              還在祈禱夢寐以求的展覽嗎？沒關係，湖中女神幫您實現。
+            </h1>
+            
+            <!-- 平板 & 手機版（兩行） -->
+            <h1 class="fs-8 fw-700 position-absolute text-center top-50 start-50 translate-middle text-white text-nowrap d-block d-md-none text-center">
+              還在祈禱夢寐以求的展覽嗎？<br>沒關係，湖中女神幫您實現。
+            </h1>
+      </div>
+    </section>
+
+
+    <!-- 金銀對決 -->
+    <section class="vsBlock">
+      <div class="vsBg"></div>
+      <div class="vsBlock-top">
+        <div class="title d-flex justify-content-center mb-6">
+          <p class="fs-8 fw-700 mt-17">
+            <span>到底是舉辦</span><span class="sliver">銀光</span><span class="">展覽比較誘人？ </span>
+            <span>還是舉辦</span><span class="gold">金光</span><span class="">的展覽令人嚮往？</span>
+          </p>
+        </div>
+        <div class="time d-flex justify-content-center mb-15">
+          <div id="timeDisplay" class="countdown">
+            <span id="">投票倒數：</span>
+            <span id="days"></span><span>天</span>
+            <span id="hours"></span><span>小時</span>
+            <span id="minutes"></span><span>分</span>
+            <span id="seconds"></span><span>秒</span>
+          </div>
+      </div>
+      <div class="vsCard container">
+        <div class="row gx-17 d-flex justify-content-center">
+          <div class="col-lg-4">
+            <div class=" mb-6 d-flex flex-column rounded-4 vs-search-card">
+              <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
+                <p class="mb-0">2024/8/15 - 2024/9/15</p>
+                <div class="d-flex align-items-center">
+                  <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                  <p class="mb-0 nowrap">台北市</p>
+                </div>
+              </div>
+              <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
+                <div class="card mx-auto py-0 no-border rounded-4">
+                  <div class="img-240 rounded-4">
+                    <img src="../assets/images/demo-origin-12.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
+                  </div>
+                  <div class="card-body pb-0">
+                    <div class="card-title">
+                      <div class="d-flex align-items-center">
+                        <h3 class="fw-700 title-font-size">記憶的印記</h3>
+                        <span class="material-symbols-outlined title-font-size">
+                          bookmark_add
+                        </span>
+                      </div>
+                    </div>
+                    <div class="card-tag">
+                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
+                      <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 分隔線 -->
+          <div class="col-auto d-flex align-items-center">
+            <div class="separator mb-5"></div>
+          </div>
+
+            <div class="col-lg-4">
+              <div class=" mb-6 d-flex flex-column rounded-4 vs-search-card">
+                <div class="d-flex justify-content-between align-items-center rounded-top-4 border-custom py-4 px-6">
+                  <p class="mb-0">2024/8/15 - 2024/9/15</p>
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                    <p class="mb-0 nowrap">台北市</p>
+                  </div>
+                </div>
+                <div class=" border border-primary-900 py-6 px-6 rounded-bottom-4 h-100">
+                  <div class="card mx-auto py-0 no-border rounded-4">
+                    <div class="img-240 rounded-4">
+                      <img src="../assets/images/demo-origin-12.png" class="card-img-top rounded-4 w-100 img-enlarge" alt="...">
+                    </div>
+                    <div class="card-body pb-0">
+                      <div class="card-title">
+                        <div class="d-flex align-items-center">
+                          <h3 class="fw-700 title-font-size">記憶的印記</h3>
+                          <span class="material-symbols-outlined title-font-size">
+                            bookmark_add
+                          </span>
+                        </div>
+                      </div>
+                      <div class="card-tag">
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1">#攝影展</span>
+                        <span class="badge rounded-pill border border-gray-700 text-gray-700 fw-400 px-2 py-1 ms-4">#光影藝術</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+      </div>
+      
+      <!-- 進度條 -->
+   
+      <div class="progress" style="height: 30px; position: relative">
+        <div class="progress-bar bg-gradient-gray" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0"
+          aria-valuemax="100">125</div>
+      <div class="vs-text-container">
+        <span class="vs-text fs-3">VS</span>
+        <div class="vs-circle"></div>
+      </div>
+          <div class="progress-bar bg-gradient-gold" role="progressbar" style="width: 40%" aria-valuenow="15" aria-valuemin="0"
+          aria-valuemax="100">83</div>
+      </div>
+
+      
+      <!-- <div class="position-relative">
+        <div class="progress rounded-pill" style="height: 30px;">
+          <div class="progress-bar bg-gradient-gray" style="width: 60%;"></div>
+          <div class="progress-bar bg-gradient-gold" style="width: 40%;"></div>
+        </div>
+      
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center vs-circle">
+          <span class="me-2 fw-bold">125</span>
+          <span class="vs-text">VS</span>
+          <span class="ms-2 fw-bold">83</span>
+        </div>
+      </div> -->
+
+
+          <!-- 電腦版 底部圓--> 
+        
+      <img class="deco-position-lg-top-left deco-position-lg-top-left-transform d-none d-md-block"
+           src="../assets/images/deco/vs-deco-lg-01.png" alt="vs-deco-lg-1" />
+      <img class="deco-position-lg-top-right deco-position-lg-top-right-transform d-none d-md-block"
+           src="../assets/images/deco/vs-deco-lg-02.png" alt="vs-deco-lg-2" />
+     
+    </section>
+    </div>
+
+    <!-- 展覽許願箱 -->
+    <section></section>
+
+    <!-- 跑馬燈 -->
+
+ 
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script>
+      // document.getElementById("currentTime").innerHTML = new Date().toLocaleString("zh-TW");
+
+      
+    </script>
+  </body>
+</html>
