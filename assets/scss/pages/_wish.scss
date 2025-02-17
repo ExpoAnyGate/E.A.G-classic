@@ -1,0 +1,228 @@
+
+.vsBlock {
+    position: relative;
+    //     z-index: 0;
+    min-height: 100vh;
+    overflow: hidden; //避免圓圈超出範圍
+}
+
+.vsBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 從容器左邊開始 */
+    width: 100%;
+    /* 寬度為 100% */
+    height: 900px;
+    background: rgba(247, 249, 240, 1);
+    z-index: -3;/* 在圓圈之下 */
+}
+
+.vsBlock-top {
+    //border: 2px solid red;
+ }
+    
+
+
+
+.title,
+.time {
+    position: relative;
+    z-index: 2;
+    /* 讓文字和金銀橢圓在裝飾之上 */
+}
+
+
+
+/* 銀光和金光 文字 */
+.sliver,
+.gold {
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 16px 24px;
+}
+
+/* 銀光的橢圓框 */
+.sliver::after {
+    content: "";
+    position: absolute;
+    bottom: 10px; //橢圓向上移動
+    left: 50%; //橢圓左邊 在銀和光之間
+    transform: translateX(-50%); //橢圓中心點 再向左移50%
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(65.47deg, #9C9894 8.11%, #C7C7C7 90.71%);
+    border-radius: 100px;
+    z-index: -1;
+}
+
+/* 金光的橢圓框 */
+.gold::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 60px;
+    background: linear-gradient(67.42deg, #DDBF48 5.4%, #FFDF5F 93.14%);
+    border-radius: 100px;
+    z-index: -1;
+}
+
+
+.deco-position-lg {
+    &-top-left
+     {
+        width: 80vw;
+        position: absolute;
+    }
+       
+     &-top-right {
+        width: 75vw;
+        position: absolute;
+    }
+
+    &-top-left {
+        left: 0;
+         top: 0;
+
+        &-transform {
+            transform: translate(-50%, -15%);
+            z-index: -2;
+        }
+    }
+
+    &-top-right {
+        right: 0;
+        top: 0;
+        max-width: 100vw;
+        height: auto;
+        overflow: hidden;
+        &-transform {
+            transform: translate(50%, -20%);
+            z-index: -2;
+           
+
+        }
+    }
+
+}
+
+
+.img-240 {
+    height: 240px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+        min-width: 303px;
+        height: 240px;
+    }
+}
+
+.img-240 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.vs-search-card {
+    position: relative;
+    z-index: 5;
+    background: white;
+    /* 確保有背景色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); //初始的模糊黑色陰影
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; //滑鼠移開 確保過渡效果平滑
+
+    &:hover {
+        transform: translateY(-3px) ;
+        box-shadow: 0 8px 16px rgba(251, 1, 1, 0.1); // 陰影更模糊且更淡
+
+        .img-enlarge {
+            transform: scale(1.05);
+            display: block;
+            transition: transform 0.4s ease-in-out;
+        }
+    }
+}
+
+
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+.separator {
+    width: 1px;
+    height: 90%;
+    background-color: #ccc;
+}
+
+
+
+.progress {
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+
+.bg-gradient-gray {
+    background: linear-gradient(90deg, #9C9894 0%, #C7C7C7 100%);
+    border-radius: 50px 0 0 50px;
+}
+
+.bg-gradient-gold {
+    background: linear-gradient(90deg, #DDBF48 0%, #FFDF5F 100%);
+    border-radius: 0 50px 50px 0;
+}
+
+// .vs-circle {
+//     background-color: black;
+//     border-radius: 50%;
+//     padding: 6px 12px;
+//     min-width: 50px;
+// }
+
+// .vs-text {
+//     color: white;
+//     font-weight: bold;
+//     position: relative;
+//     display: inline-block;
+// }
+
+/* 讓 VS 文字和圓圈能夠絕對定位 */
+.vs-text-container {
+    position: absolute;
+    left: 60%;
+    /* 讓 VS 文字移動到 15% 的位置 */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* 讓它完全居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* VS 文字 */
+.vs-text {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* 黑色圓圈 */
+.vs-circle {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
