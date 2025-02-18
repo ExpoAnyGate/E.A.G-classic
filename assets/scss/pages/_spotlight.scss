@@ -38,18 +38,7 @@
     z-index: -1;
 }
 
-// .spotlight-card:nth-child(1) .spotlight-card-info::before {
-//     background-color: $secondary-50; /* 卡片 1 的顏色 */
-//   }
-// .spotlight-card:nth-child(2) .spotlight-card-info::before {
-//     background-color: $primary-50; /* 卡片 2 的顏色 */
-//   }
-// .spotlight-card:nth-child(3) .spotlight-card-info::before {
-//     background-color: $tertiary-50; /* 卡片 3 的顏色 */
-//   }
-// .spotlight-card:nth-child(4) .spotlight-card-info::before {
-//     background-color: $gray-50; /* 卡片 3 的顏色 */
-//   }
+
 
 .spotlight-card {
     // margin-top: 226px;
@@ -134,4 +123,38 @@
         border-radius: 50px 10px; 
     }
 
+}
+
+
+.marquee-container {
+    overflow: hidden;  /* 隱藏超出範圍的內容 */
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.marquee {
+    display: flex;
+    gap: 20px; /* 控制圖片間距 */
+    width: max-content;
+    animation: marquee-scroll 20s linear infinite;
+}
+
+.sponsor-img {
+    height: 150px; /* 設定圖片高度，可依需求調整 */
+    width: auto;
+}
+
+/* 定義滾動動畫 */
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-container:hover .marquee {
+    animation-play-state: paused;
 }
