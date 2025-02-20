@@ -1,10 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 
 .vsBlock {
     position: relative;
-    //     z-index: 0;
     min-height: 100vh;
     overflow: hidden; //避免圓圈超出範圍
 }
+
 
 .vsBg {
     position: absolute;
@@ -13,15 +14,11 @@
     /* 從容器左邊開始 */
     width: 100%;
     /* 寬度為 100% */
-    height: 900px;
+    height: 100%;
     background: rgba(247, 249, 240, 1);
     z-index: -3;/* 在圓圈之下 */
 }
 
-.vsBlock-top {
-    //border: 2px solid red;
- }
-    
 
 
 
@@ -32,6 +29,9 @@
     /* 讓文字和金銀橢圓在裝飾之上 */
 }
 
+.vsBlock-text{
+    white-space: nowrap;
+}
 
 
 /* 銀光和金光 文字 */
@@ -47,11 +47,11 @@
 .sliver::after {
     content: "";
     position: absolute;
-    bottom: 10px; //橢圓向上移動
+    bottom: 12px; //橢圓向上移動
     left: 50%; //橢圓左邊 在銀和光之間
     transform: translateX(-50%); //橢圓中心點 再向左移50%
-    width: 100px;
-    height: 60px;
+    width: 90px;
+    height: 56px;
     background: linear-gradient(65.47deg, #9C9894 8.11%, #C7C7C7 90.71%);
     border-radius: 100px;
     z-index: -1;
@@ -62,10 +62,10 @@
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 12px;
     transform: translateX(-50%);
-    width: 100px;
-    height: 60px;
+    width: 90px;
+    height: 56px;
     background: linear-gradient(67.42deg, #DDBF48 5.4%, #FFDF5F 93.14%);
     border-radius: 100px;
     z-index: -1;
@@ -162,9 +162,9 @@
 }
 
 
-
+//進度條
 .progress {
-    max-width: 500px;
+ //   max-width: 600px;
     margin: auto;
     position: relative;
 }
@@ -226,3 +226,119 @@
     transform: translate(-50%, -50%);
     z-index: 0;
 }
+
+
+
+//投票箱
+
+.voteBg {
+width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+
+/* 電腦版 (>= 992px) */
+@media (min-width: 992px) {
+    #voteTitle {
+        top: 30%;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    #subTitle {
+        top: calc(30% + 4rem);
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    #wishButton {
+        top: calc(50%);
+        left: 60%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 平板版 (>= 768px & < 992px) */
+@media (max-width: 991px) and (min-width: 768px) {
+    #voteTitle {
+        top: 35%;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    #subTitle {
+        top: calc(35% + 4rem);
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    #wishButton {
+        top: calc(60%);
+        left: 60%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 手機版 (< 768px) */
+@media (max-width: 767px) {
+    #voteTitle {
+        top: 31%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #subTitle {
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #wishButton {
+        top: calc(40%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-size: 36px;
+    color: $secondary-800;
+    margin: 0 1rem;
+}
+
+//跑馬燈
+.swiper {
+    background-color: $primary-200;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.swiper-slide {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: auto;
+    color: $gray-700;
+    margin-right: 50px;
+}
+
+
+.swiper-material {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: -5px;
+}
+
+
+
+   
