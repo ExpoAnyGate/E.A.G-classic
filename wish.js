@@ -1,4 +1,4 @@
-
+//倒數
 function updateCountdown() {
   const targetDate = new Date("2025-03-16T00:00:00"); // 目標時間 專題發表日！！！
   const now = new Date();
@@ -28,3 +28,21 @@ function updateCountdown() {
 
 // 每秒更新一次倒數
 const countdownInterval = setInterval(updateCountdown, 1000);
+
+
+
+//跑馬燈
+const swiper = new Swiper(".mySwiper", {
+  direction: "horizontal", // 水平滾動
+  allowTouchMove: false,  // 禁止手動滑動
+  //能呈現幾個.swiper-slide
+  slidesPerView: "auto",  
+  speed: 8000, //跑馬燈的速度(毫秒) 數值越大越慢
+  loop: true, //循環
+  autoplay: {
+    delay: 0,   // 不延遲，馬上滾動
+    //避免點擊造成跑馬燈失效，視情況增加
+    disableOnInteraction: false,
+  },
+});
+
