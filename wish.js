@@ -46,3 +46,18 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
+//許願展覽 計算剩下可輸入幾字
+function updateCharacterCount() {
+  const describeText = document.getElementById("describe-text");
+  const charCountP = document.querySelector("#char-count p");
+  const maxLength = describeText.getAttribute("maxlength");
+  const currentLength = describeText.value.length;
+  charCountP.textContent = `${currentLength}/${maxLength}`;
+}
+
+// 初始化計數
+document.addEventListener("DOMContentLoaded", () => {
+    const describeText = document.getElementById("describe-text");
+    describeText.addEventListener("input", updateCharacterCount);
+    updateCharacterCount(); // 確保頁面加載完成後也進行計數更新
+});
