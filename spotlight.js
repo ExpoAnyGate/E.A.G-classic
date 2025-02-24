@@ -1,7 +1,22 @@
+
+let mybanner = new Swiper(".artist-swiper", {
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500, // 设置为 5000 毫秒 (即 5 秒)
+      disableOnInteraction: false, // 用户交互后是否继续自动播放
+    },
+    loop: true,
+  });
+
 const multiplier = {
     translate: .1,
     rotate: .01
 }
+
 
 new Swiper('.spotlight-swiper', {
     slidesPerView: 'auto',
@@ -9,13 +24,14 @@ new Swiper('.spotlight-swiper', {
     centeredSlides: true,
     loop: true,
     grabCursor: true,
-    allowTouchMove: false,
-    speed: 5000,
-    autoplay: {
-        delay: 0,   // 不延遲，馬上滾動
-        //避免點擊造成跑馬燈失效，視情況增加
-        disableOnInteraction: false,
-    },
+  allowTouchMove: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0,   // 不延遲，馬上滾動
+    //避免點擊造成跑馬燈失效，視情況增加
+    disableOnInteraction: false,
+  },
+  
 })
 
 function calculateWheel() {
