@@ -314,15 +314,15 @@ overflow: hidden;
 }
 
 //跑馬燈
-.swiper {
+.wish-swiper {
     background-color: $primary-200;
 }
 
-.swiper-wrapper {
+.wish-swiper .swiper-wrapper {
     transition-timing-function: linear;
 }
 
-.swiper-slide {
+.wish-swiper .swiper-slide {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 14px;
@@ -334,7 +334,7 @@ overflow: hidden;
 }
 
 
-.swiper-material {
+.wish-swiper .swiper-wrapper .swiper-material {
     vertical-align: middle;
     font-size: 20px;
     margin-right: -5px;
