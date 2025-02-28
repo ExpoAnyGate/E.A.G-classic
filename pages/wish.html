@@ -132,7 +132,7 @@
             </div>
           </div>
           <!-- 更多介紹 Modal-->
-          <div class="modal fade" id="expoDetailModal" tabindex="-1" aria-labelledby="expoDetailModalLabel" aria-hidden="true">
+          <div class="modal fade wish-backdrop-modal" id="expoDetailModal" tabindex="-1" aria-labelledby="expoDetailModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content bg-secondary-50">
                 <div class="modal-header">
@@ -140,7 +140,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- style="border: 1px solid rgb(206, 51, 188);" -->
-                <div class="modal-body">
+                <div class="moreDetail modal-body">
                   <div class="">
                     <div class="modal-div">
                       <img class="rounded-3" src="../assets/images/wish/wish-lg-3.jpeg" alt="">
@@ -156,7 +156,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">calendar_month</span>
                           <p class="">時間</p>
                         </div>
                         <p class="content">2024/8/15 - 2024/9/15</p>
@@ -164,7 +164,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">kid_star</span>
                           <p class="">展覽亮點</p>
                         </div>
                         <p class="content">用香氣描繪生活的精緻,將質感化為觸手可及的感動。每一個氣味，都是一場專屬於嗅覺的冒險。</p>
@@ -172,7 +172,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">palette</span>
                           <p class="">主題體驗</p>
                         </div>
                         <p class="content">感官漫遊-穿越花香、木質與清新調性的香氣迷宮，發現最適合你的專屬味道。</p>
@@ -182,7 +182,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">saved_search</span>
                           <p class="">展覽特色</p>
                         </div>
                         <p class="content">來自全球的經典香氛品牌,攜手新銳調香師,共同打造氣味的饗宴。精緻展區設計,結合燈光、音樂與互動科技,提供沉浸式感官體驗。</p>
@@ -232,17 +232,17 @@
                 </div>
                 <button class="btn btn-secondary-800 text-white"
                           data-bs-toggle="modal"
-                          data-bs-target="#memberLogin"
+                          data-bs-target="#JoinMember"
                 >加入會員</button>
 
-                        <div class="modal fade fade-motion" id="memberLogin" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal fade fade-motion" id="JoinMember" tabindex="-1" aria-labelledby="exampleModalLabel">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content border-0">
                               <div class="modal-header bg-primary-700 border-0">
                                 <h1 class="modal-title fs-5 text-gray-000" id="exampleModalLabel">
                                   登入／註冊
                                 </h1>
-                                <button type="button" class="btn-close d-none d-md-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                         
                               <div class="modal-body bg-primary-100 py-5">
@@ -273,7 +273,6 @@
                                             <label for="captcha" class="fs-4 text-gray-500">圖形驗證碼</label>
                                           </div>
                                           <div class="ms-1 d-none d-md-block">
-                                            <!-- 這裡寫得不好 -->
                                             <span class="bg-gray-200 h-100 d-flex align-items-center">
                                               <img src="../assets/images/captcha.png" alt="captcha" class="w-90" />
                                             </span>
@@ -288,7 +287,6 @@
                                       <div class="d-md-none mb-3">
                                         <div class="d-flex">
                                           <div class="ms-1">
-                                            <!-- 這裡寫得不好 -->
                                             <span class="bg-gray-200 h-100 d-flex align-items-center">
                                               <img src="../assets/images/captcha.png" alt="captcha" class="w-100" />
                                             </span>
@@ -381,7 +379,7 @@
     </section>
 <!-- style="border: 1px solid red;" -->
     <!-- 展覽許願箱 -->
-    <section class="voteBg  position-relative ">
+    <section class="voteBg position-relative ">
       <div class="row">
         <div class="col-6"></div>
         <div class="col-6">
@@ -402,7 +400,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <!-- style="border: 1px solid rgb(206, 51, 188);" -->
-              <div class="modal-body">
+              <div class="modal-body container-fluid">
                 <form>
                   <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">帳號:</label>
@@ -436,7 +434,7 @@
               </div>
             </div>
       
-                </form>
+                </form>   
               </div>
               <div class="modal-footer d-flex justify-content-center flex-column">
                 <button type="button" class="btn btn-secondary-800 text-white" data-bs-dismiss="modal">送出許願</button>
@@ -457,7 +455,7 @@
 
   
     <!-- 跑馬燈 太少則會出錯-->
-<div class="wish-swiper mySwiper">
+<div class="swiper wish-swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><span class="swiper-material material-symbols-outlined">candle</span>阿鼠：許願一場沉浸式香氛展@桃園~~</div>
     <div class="swiper-slide"><span class="swiper-material material-symbols-outlined">favorite</span>1457：許願一場農漁地景藝術展@彰化~~</div>
