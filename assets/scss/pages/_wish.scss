@@ -211,15 +211,14 @@
     z-index: 0;
 }
 
-
+// margin: 0;
+// padding: 0;
 
 //投票箱
-
 .voteBg {
 width: 100%;
 height: auto;
-margin: 0;
-padding: 0;
+
 overflow: hidden;
 }
 
@@ -326,25 +325,32 @@ overflow: hidden;
 
 /* 大於等於1200px，桌面寬度 */
 @media (min-width: 1200px) {
-    .moreDetail .modal-dialog {
+    #expoDetailModal .modal-dialog,
+    #wishBoxModal .modal-dialog {
         max-width: 800px;
     }
 }
 
 /* 大於等於768px且小於1200px，平板寬度 */
 @media (min-width: 768px) and (max-width: 1199px) {
-    #expoDetailModal .modal-dialog {
+    #expoDetailModal .modal-dialog,
+    #wishBoxModal .modal-dialog {
         max-width: 600px;
-        /* 設置平板寬度 */
     }
 }
 
 /* 小於768px */
 @media (max-width: 767px) {
-    #expoDetailModal .modal-dialog {
-        max-width: 100%;
-        margin: 10px; /* 避免緊貼邊緣 */
+    #expoDetailModal .modal-dialog,
+    #wishBoxModal .modal-dialog {
+        max-width: 95%;
+        margin: auto;
     }
+}
+
+#wishBoxModal .modal-content {
+    width: 100%;
+    /* 確保內容撐滿 */
 }
 
 /* 加入會員modal 小於768px */
@@ -356,12 +362,10 @@ overflow: hidden;
     }
 }
 
-
-#expoDetailModal.modal {
-    z-index: 1050;
-    /* 確保 modal 在 backdrop 之上 */
-    pointer-events: auto;
-    /* 確保 modal 可操作 */
+#expoDetailModal.modal,
+#wishBoxModal.modal {
+    z-index: 1050;/* 確保 modal 在 backdrop 之上 */
+    pointer-events: auto;/* 確保 modal 可操作 */
 }
 
  /* 怕會影響其他modal*/
@@ -377,14 +381,25 @@ overflow: hidden;
 // }
 
  /* 只影響 expoDetailModal 可能只支援較新的瀏覽器*/
-body:has(#expoDetailModal.show) .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1040;
+body:has(#expoDetailModal.show),
+body:has(#wishBoxModal.show) {
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+    }
 }
 
-.moreDetail .modal-body .modal-div{  
+/* 解決許願modal  小尺寸時偏左問題 */
+@media (max-width: 767px) {
+#wishBoxModal {
+    padding-left: 0.6rem !important;
+}
+}
+
+.moreDetail .modal-body .modal-div,
+#wishBoxModal .modal-body{  
    width: 100%;
    max-width: 800px;
    //border: 1px red solid;
