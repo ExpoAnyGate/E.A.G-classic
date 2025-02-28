@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E.A.G許願池</title>
-    <script type="module" crossorigin src="/E.A.G-classic/assets/motion-68074889.js"></script>
-    <link rel="stylesheet" href="/E.A.G-classic/assets/motion-e15c4f90.css">
+    <script type="module" crossorigin src="/E.A.G-classic/assets/motion-e1d83fb6.js"></script>
+    <link rel="stylesheet" href="/E.A.G-classic/assets/motion-81cc2719.css">
   </head>
   <body>
     <nav class="bg-white position-breakpoint">
@@ -485,7 +485,7 @@
             </div>
           </div>
           <!-- 更多介紹 Modal-->
-          <div class="modal fade" id="expoDetailModal" tabindex="-1" aria-labelledby="expoDetailModalLabel" aria-hidden="true">
+          <div class="modal fade wish-backdrop-modal" id="expoDetailModal" tabindex="-1" aria-labelledby="expoDetailModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content bg-secondary-50">
                 <div class="modal-header">
@@ -493,7 +493,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- style="border: 1px solid rgb(206, 51, 188);" -->
-                <div class="modal-body">
+                <div class="moreDetail modal-body">
                   <div class="">
                     <div class="modal-div">
                       <img class="rounded-3" src="/E.A.G-classic/assets/wish-lg-3-d406661a.jpeg" alt="">
@@ -509,7 +509,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">calendar_month</span>
                           <p class="">時間</p>
                         </div>
                         <p class="content">2024/8/15 - 2024/9/15</p>
@@ -517,7 +517,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">kid_star</span>
                           <p class="">展覽亮點</p>
                         </div>
                         <p class="content">用香氣描繪生活的精緻,將質感化為觸手可及的感動。每一個氣味，都是一場專屬於嗅覺的冒險。</p>
@@ -525,7 +525,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">palette</span>
                           <p class="">主題體驗</p>
                         </div>
                         <p class="content">感官漫遊-穿越花香、木質與清新調性的香氣迷宮，發現最適合你的專屬味道。</p>
@@ -535,7 +535,7 @@
         
                       <div class="mb-4 expoRow">
                         <div class="d-flex align-items-center title">
-                          <span class="material-symbols-outlined fs-6 px-0">location_on</span>
+                          <span class="material-symbols-outlined fs-6 px-0">saved_search</span>
                           <p class="">展覽特色</p>
                         </div>
                         <p class="content">來自全球的經典香氛品牌,攜手新銳調香師,共同打造氣味的饗宴。精緻展區設計,結合燈光、音樂與互動科技,提供沉浸式感官體驗。</p>
@@ -585,17 +585,17 @@
                 </div>
                 <button class="btn btn-secondary-800 text-white"
                           data-bs-toggle="modal"
-                          data-bs-target="#memberLogin"
+                          data-bs-target="#JoinMember"
                 >加入會員</button>
 
-                        <div class="modal fade fade-motion" id="memberLogin" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal fade fade-motion" id="JoinMember" tabindex="-1" aria-labelledby="exampleModalLabel">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content border-0">
                               <div class="modal-header bg-primary-700 border-0">
                                 <h1 class="modal-title fs-5 text-gray-000" id="exampleModalLabel">
                                   登入／註冊
                                 </h1>
-                                <button type="button" class="btn-close d-none d-md-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                         
                               <div class="modal-body bg-primary-100 py-5">
@@ -626,7 +626,6 @@
                                             <label for="captcha" class="fs-4 text-gray-500">圖形驗證碼</label>
                                           </div>
                                           <div class="ms-1 d-none d-md-block">
-                                            <!-- 這裡寫得不好 -->
                                             <span class="bg-gray-200 h-100 d-flex align-items-center">
                                               <img src="data:image/png;base64,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" alt="captcha" class="w-90" />
                                             </span>
@@ -641,7 +640,6 @@
                                       <div class="d-md-none mb-3">
                                         <div class="d-flex">
                                           <div class="ms-1">
-                                            <!-- 這裡寫得不好 -->
                                             <span class="bg-gray-200 h-100 d-flex align-items-center">
                                               <img src="data:image/png;base64,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" alt="captcha" class="w-100" />
                                             </span>
@@ -810,7 +808,7 @@
 
   
     <!-- 跑馬燈 太少則會出錯-->
-<div class="wish-swiper mySwiper">
+<div class="swiper wish-swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><span class="swiper-material material-symbols-outlined">candle</span>阿鼠：許願一場沉浸式香氛展@桃園~~</div>
     <div class="swiper-slide"><span class="swiper-material material-symbols-outlined">favorite</span>1457：許願一場農漁地景藝術展@彰化~~</div>
