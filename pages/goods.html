@@ -1,11 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>goods</title>
 </head>
+
 <body>
-    
+    <%- include('./layout/navbar'); -%>
+        <section class="goods-banner bg-secondary-50 py-sm-80 py-lg-120">
+            <div class="container-fuild d-flex justify-content-center">
+                <div class="goods-banner-image-wrapper">
+                    <picture>
+                        <!-- 平板版 -->
+                        <source srcset="../assets/images/goods/goods-gashapon-md.png" media="(min-width: 768px)">
+                        <!-- 桌機版  -->
+                        <source srcset="../assets/images/goods/goods-gashapon-lg.png" media="(min-width: 1024px)">
+                        <!-- 手機版 (小尺寸為主) -->
+                        <img src="../assets/images/goods/goods-gashapon-sm.png" alt="gashapon" class="pt-40">
+                    </picture>
+                </div>
+            </div>
+            <div class="capsule-container">
+                <div class="capsule red"></div>
+                <div class="capsule blue"></div>
+                <div class="capsule yellow"></div>
+            </div>
+        </section>
+        <!-- goods -->
+        <section class="goods bg-secondary-50 py-sm-80 py-lg-120">
+            <div class="container">
+                <!-- goods-title -->
+                <div class="d-flex flex-column align-items-center mb-15">
+                    <h2 class="goods-title font-size-8 font-size-lg-15 fw-700 text-primary-800 mb-6">周邊商品</h2>
+                    <h2 class="goods-title font-bagel-fat-one font-size-8 font-size-lg-12 text-primary-800">OFFICIAL
+                        GOODS</h2>
+                </div>
+                <!-- goods-list -->
+                <div class="container d-flex justify-content-between">
+                    <ul class="goods-list row d-flex flex-nowrap flex-md-wrap justify-content-md-center overflow-auto">
+                        <!-- 1 -->
+                        <li class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000"
+                            data-bs-toggle="modal" data-bs-target="#goodsModal1">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-1 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">1</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-1.png" alt="dtto friends | 玩偶小吊飾"
+                                        class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">dtto friends | 玩偶小吊飾</p>
+                            </div>
+                        </li>
+                        <!-- 2 -->
+                        <li
+                            class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-2 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">2</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-2.png" alt="dtto friends | 兩用造型頸枕"
+                                        class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">dtto friends | 兩用造型頸枕</p>
+                            </div>
+                        </li>
+                        <!-- 3 -->
+                        <li class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000"
+                            data-bs-toggle="modal" data-bs-target="#goodsModal3">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-3 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">3</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-3.png" alt="dtto friends | 缩纷浴巾"
+                                        class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">dtto friends | 缩纷浴巾</p>
+                            </div>
+                        </li>
+                        <!-- 4 -->
+                        <li
+                            class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-4 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-1000">4</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-4.png" alt="貓貓共和國 | 珪薸土杯墊" class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">貓貓共和國 | 珪薸土杯墊</p>
+                            </div>
+                        </li>
+                        <!-- 5 -->
+                        <li
+                            class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-5 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">5</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-5.png" alt="藝展任意門 | 2025桌曆" class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">藝展任意門 | 2025桌曆</p>
+                            </div>
+                        </li>
+                        <!-- 6 -->
+                        <li
+                            class="goods-card col-12 col-lg-4 d-flex flex-column align-items-center justify-content-center bg-gray-000">
+                            <div
+                                class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
+                                <div
+                                    class="goods-number bg-official-good-6 d-flex justify-content-center align-items-center">
+                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">6</p>
+                                </div>
+                            </div>
+                            <div class="goods-item-bottom p-6">
+                                <div class="goods-image-wrapper">
+                                    <img src="../assets/images/goods/goods-6.png" alt="樋口裕子展 | 刺繡絨毛東口袋" class="w-100">
+                                </div>
+                                <p class="goods-info fw-700 mt-4 text-center">樋口裕子展 | 刺繡絨毛東口袋</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal -->
+
+                <!-- Modal-3 -->
+                <div class="modal fade goods-modal" id="goodsModal3" tabindex="-1" aria-labelledby="goodsModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-secondary-50 p-3 px-md-14 col-12">
+                            <!-- Header -->
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title font-size-4 font-size-md-5 fw-bold" id="goodsModalLabel">dtto
+                                    friends | 繽紛浴巾</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <!-- 商品圖片 -->
+                                <div class="goods-image mb-3">
+                                    <img src="../assets/images/goods/goods-3.png" alt="dtto friends | 繽紛浴巾"
+                                        id="modalImage" class="w-100 rounded">
+                                </div>
+                                <!-- 產品描述 -->
+                                <div class="goods-description">
+                                    <h6 class="fw-bold text-primary-800"><span class="material-symbols-outlined">
+                                            campaign
+                                        </span>繽紛色彩，點亮每一天！</h6>
+                                    <p id="modalDescription" class="text-gray-700">
+                                        繽紛浴巾以絕佳觸感與高品質設計，為您打造沐浴後的極致享受。輕柔的材質包裹身體，不僅迅速吸水，還讓每一次接觸都如雲朵般輕盈。</p>
+                                </div>
+                                <!-- 產品特色 -->
+                                <div class="goods-features mt-4">
+                                    <h6 class="fw-bold text-primary-800"><span class="material-symbols-outlined">
+                                            kid_star
+                                        </span>產品特色</h6>
+                                    <ul class="list-unstyled">
+                                        <li class=""><strong>高吸水力 - </strong>精選細緻纖維，快速吸乾水分,讓您時刻保持清爽。</li>
+                                        <li class="mt-2"><strong>柔軟親膚 - </strong>適合各種肌膚，溫和呵護敏感肌膚也不在話下。</li>
+                                        <li class="mt-2"><strong>繽紛設計 - </strong>多款明亮色彩，為您的浴室增添活力與時尚感。</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 適用場景 -->
+                                <div class="goods-usage mt-4">
+                                    <h6 class="fw-bold text-primary-800"><span class="material-symbols-outlined">
+                                            public
+                                        </span>適用場景</h6>
+                                    <p class="text-gray-700">居家沐浴、運動後清潔、泳池派對必備，甚至是送禮的首選！</p>
+                                </div>
+
+                                <!-- 限時優惠 -->
+                                <div class="goods-offer mt-4">
+                                    <h6 class="fw-bold text-primary-800"><span class="material-symbols-outlined">
+                                            schedule
+                                        </span>限時兌換，讓幸福觸手可及！</h6>
+                                    <p class="text-gray-700">立即擁有繽紛浴巾，用色彩與柔軟點綴您的生活！</p>
+                                </div>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-dark mx-auto px-6 py-4"
+                                    data-bs-dismiss="modal">我了解惹！</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 我要轉扭蛋-btn -->
+                <div class="text-center mt-17 mt-xl-20">
+                    <a href="#" class="btn btn-gray-700 text-gray-000 py-2 px-4" data-bs-toggle="modal"
+                        data-bs-target="#gachaModal">
+                        我要轉扭蛋
+                    </a>
+                </div>
+                <!-- gacha-Modal -->
+                <!-- gacha-Modal-1 -->
+                <div class="gacha-modal modal fade" id="gachaModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-secondary-50 px-6 px-md-15 pt-6 pb-10">
+                            <div class="modal-header p-0 border-bottom-0">
+                                <h5 class="modal-title font-size-5 fw-700">轉扭蛋</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="../assets/images/goods/goods-gashapon-sm.png" alt="扭蛋機">
+                                <div class="gacha-container text-center">
+                                    <span class="fw-bold">我想轉</span>
+
+                                    <!-- 下拉選單 -->
+                                    <select id="gachaCount" class="gacha-select">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+
+                                    <span class="fw-bold">次扭蛋</span>
+
+                                    <p>你總共有 <span id="totalEcoins" class="text-primary fw-bold">100</span> 個E幣，</p>
+                                    <p>此次會花掉 <span id="costEcoins" class="text-danger fw-bold">60</span> 個E幣</p>
+                                </div>
+                                <button class="btn btn-dark" id="startGacha">抽起來</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- support-robot -->
+        <section class="support-robot-section bg-secondary-50 py-17 py-lg-20">
+            <div class="message-container container d-flex flex-column justify-content-center align-items-center">
+                <div class="message-box bg-gray-000 col-12 p-8">
+                    <h3 class="support-title font-size-6 font-size-md-8 fw-700 mb-8">為鼓勵支持藝術家和平台運營</h3>
+                    <!-- support-list -->
+                    <ol class="support-list ms-8">
+                        <li class="mb-8">
+                            <p class="support-sub-title mb-2">乾爹回饋</p>
+                            <p class="support-detail">感恩支持藝術家創作與平台發展，抖內plus 會員每月可獲得<strong>1個E幣</strong>；抖內pro max
+                                每月可獲得<strong>2個E幣</strong>。</p>
+                        </li>
+                        <li class="mb-8">
+                            <p class="support-sub-title mb-2">展覽互動</p>
+                            <p class="support-detail">參加特定藝術展覽活動，可獲取<strong>1至3個E幣</strong>的參與獎勵，讓您的支持成為藝術的一部分。</p>
+                        </li>
+                        <li class="mb-8">
+                            <p class="support-sub-title mb-2">節日活動</p>
+                            <p class="support-detail">特殊節日將舉辦限時活動，完成挑戰有機會獲得<strong>1至3個E幣</strong>的獎勵。</p>
+                        </li>
+                        <li class="mb-8">
+                            <p class="support-sub-title mb-2">心得分享</p>
+                            <p class="support-detail">發布與展覽相關的文章或評論，經審核通過後，可根據內容深度與質量獲得<strong>1至3個E幣</strong>。</p>
+                        </li>
+                        <li>
+                            <p class="support-sub-title">許願池驚喜</p>
+                            <p class="support-detail">參與平台「許願池」活動，有機會隨機獲得 <strong>E幣</strong>，探索藝術的無限可能。</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="support-robot-img-wrapper">
+                    <img src="../assets/images/goods/goods-robot-lg.png" alt="goods-robot-lg"
+                        class="support-robot-img d-block">
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <%- include('./layout/footer'); -%>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script type="module" src="../main.js"></script>
 </body>
+
 </html>

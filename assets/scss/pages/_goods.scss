@@ -1,0 +1,178 @@
+.font-bagel-fat-one{
+    font-family: "Bagel Fat One", "Noto serif", serif;
+}
+
+//goods-banner
+.capsule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .capsule {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .red { background-color: #e57373; }
+  .blue { background-color: #64b5f6; }
+  .yellow { background-color: #fdd835; }
+
+  .capsule-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .capsule {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .red { background-color: #e57373; }
+  .blue { background-color: #64b5f6; }
+  .yellow { background-color: #fdd835; }
+  .capsule-container {
+    clip-path: ellipse(60% 80% at center);
+  }
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  .capsule {
+    animation: float 2s infinite ease-in-out;
+  }
+// goods-list
+.goods-list{
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .goods-list{
+    gap: 40px;
+    row-gap:64px;
+  }
+}
+.goods-card{
+    max-width:320px ;
+        border: 1px solid $primary-900;
+        border-radius: 64px 64px 24px 24px;
+    .goods-item-upper{
+        width: calc(100% + var(--bs-gutter-x));
+    }
+    .goods-image-wrapper{
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    img{
+        height: 240px;
+    }
+}
+.goods-number{
+    border-radius:100px;
+    width: 54px;
+    height: 54px;
+}
+
+@media (min-width: 768px) {
+    .good-card{
+        max-width: 405px;
+
+    }
+}
+
+//goods-modal
+.goods-modal{
+  .modal-content{
+    border-radius: 24px;
+  }
+  h6{
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .material-symbols-outlined{
+    font-size: 24px;
+    padding: 0px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 768px) {
+  .goods-modal{
+    .modal-content{
+      width: 624px;
+    }
+    
+  }
+}
+// gacha-Modal
+.gacha-modal{
+  .modal-content{
+    border-radius: 24px;
+  }
+}
+
+//support-robot-section
+.support-robot-section{
+  .message-box{
+    position: relative;
+    border-radius: 32px;
+    max-width:1076px ;
+
+  }
+  .message-box::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 48px;
+    background-image: url("../assets/images/goods/goods-polygon-sm.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -48px; 
+    right: 40%;
+}
+@media (min-width: 768px) {
+  .message-box::after{
+    width: 100px; 
+    height: 100px; 
+    bottom: -98px; 
+    right: 20%;
+    background-image: url("../assets/images/goods/goods-polygon-lg.svg");
+  }
+}
+
+  .support-list{
+    list-style-type: disc;
+  }
+  .support-sub-title{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .support-detail{
+    margin-left: -32px;
+  }
+  
+  .support-robot-img-wrapper {
+    margin-left: auto;
+    margin-right: -20px;
+    max-width: calc(100% - 20px);
+    overflow: hidden;
+  }
+
+  .support-robot-img{
+    width: 150px;
+    height: auto;
+    margin-top: 40px;
+    z-index: 2;
+  }
+
+}
+@media (min-width: 768px) {
+  .support-sub-title{
+    font-size: 24px;
+  }
+}
