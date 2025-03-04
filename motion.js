@@ -32,6 +32,28 @@ let myHotdemo = new Swiper(".myHotdemo", {
   centeredSlides: true, 
 });
 
+let donatePlanSwiper = new Swiper(".donate-plan-swiper", {
+  slidesPerView: 'auto',  // 設定每個 slide 根據內容自動調整寬度
+  spaceBetween: 24,       // slide 之間的間距（可根據需要調整）
+  pagination: {
+    el: ".swiper-pagination",
+    
+  },
+  centeredSlides: true, 
+});
+
+
+let donatePaySwiper = new Swiper(".donate-pay-swiper", {
+  slidesPerView: 'auto',  // 設定每個 slide 根據內容自動調整寬度
+  spaceBetween: 24,       // slide 之間的間距（可根據需要調整）
+  pagination: {
+    el: ".swiper-pagination",
+    
+  },
+  centeredSlides: true, 
+});
+
+
 
 // -------
 let myrecommend_prevButton = document.querySelector('.myrecommend-button-prev');
