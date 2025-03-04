@@ -715,6 +715,12 @@ $font-sizes: (
   17: 1rem * 5    //80px
 ) !default;
 
+// 生成字體大小的 class
+@each $key, $size in $font-sizes {
+  .font-size-#{$key} {
+    font-size: $size;
+  }
+}
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
