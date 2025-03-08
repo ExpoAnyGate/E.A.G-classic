@@ -10,7 +10,9 @@
 
 <body>
     <%- include('./layout/navbar'); -%>
-        <section class="goods-banner bg-secondary-50 py-sm-80 py-lg-120">
+        <section class="goods-banner bg-secondary-50 py-sm-80 py-lg-120 position-relative">
+            <img class="circle-position-bottom" src="../assets/images/deco/round-lg-2.png" alt="round-lg-2.png">
+            <img class="circle-position-left" src="../assets/images/deco/round-lg-1.png" alt="round-lg-1.png">
             <div class="container-fuild d-flex justify-content-center">
                 <div class="goods-banner-image-wrapper">
                     <picture>
@@ -34,8 +36,8 @@
             <div class="container">
                 <!-- goods-title -->
                 <div class="d-flex flex-column align-items-center mb-15">
-                    <h2 class="goods-title font-size-8 font-size-lg-15 fw-700 text-primary-800 mb-6">周邊商品</h2>
-                    <h2 class="goods-title font-bagel-fat-one font-size-8 font-size-lg-12 text-primary-800">OFFICIAL
+                    <h2 class="goods-title fs-8 fs-lg-15 fw-700 text-primary-800 mb-6">周邊商品</h2>
+                    <h2 class="goods-title font-bagel-fat-one fs-8 fs-lg-12 text-primary-800">OFFICIAL
                         GOODS</h2>
                 </div>
                 <!-- goods-list -->
@@ -48,7 +50,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-1 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">1</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-000">1</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -66,7 +68,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-2 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">2</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-000">2</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -84,7 +86,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-3 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">3</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-000">3</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -102,7 +104,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-4 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-1000">4</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-1000">4</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -119,7 +121,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-5 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">5</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-000">5</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -136,7 +138,7 @@
                                 class="goods-item-upper d-flex justify-content-center border-bottom border-primary-900 py-4">
                                 <div
                                     class="goods-number bg-official-good-6 d-flex justify-content-center align-items-center">
-                                    <p class="font-size-5 font-size-lg-9 fw-700 text-gray-000">6</p>
+                                    <p class="fs-5 fs-lg-9 fw-700 text-gray-000">6</p>
                                 </div>
                             </div>
                             <div class="goods-item-bottom p-6">
@@ -157,7 +159,7 @@
                         <div class="modal-content bg-secondary-50 p-3 px-md-14 col-12">
                             <!-- Header -->
                             <div class="modal-header border-0">
-                                <h5 class="modal-title font-size-4 font-size-md-5 fw-bold" id="goodsModalLabel">dtto
+                                <h5 class="modal-title fs-4 fs-md-5 fw-bold" id="goodsModalLabel">dtto
                                     friends | 繽紛浴巾</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
@@ -229,7 +231,7 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content bg-secondary-50 px-6 px-md-15 pt-6 pb-10">
                             <div class="modal-header p-0 border-bottom-0">
-                                <h5 class="modal-title font-size-5 fw-700">轉扭蛋</h5>
+                                <h5 class="modal-title fs-5 fw-700">轉扭蛋</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -262,10 +264,14 @@
             </div>
         </section>
         <!-- support-robot -->
-        <section class="support-robot-section bg-secondary-50 py-17 py-lg-20">
-            <div class="message-container container d-flex flex-column justify-content-center align-items-center">
+        <section class="support-robot-section bg-secondary-50 py-17 py-lg-20 position-relative overflow-hidden">
+            <img class="circle-position-left" src="../assets/images/deco/circle-2.png" alt="circle-2.png">
+            <img class="circle-position-bottom" src="../assets/images/deco/circle-3.png" alt="circle-3.png">
+            <img class="circle-position-right" src="../assets/images/deco/circle-1.png" alt="circle-1.png">
+
+            <div class="message-container container-lg d-flex flex-column justify-content-center align-items-center">
                 <div class="message-box bg-gray-000 col-12 p-8">
-                    <h3 class="support-title font-size-6 font-size-md-8 fw-700 mb-8">為鼓勵支持藝術家和平台運營</h3>
+                    <h3 class="support-title fs-6 fs-md-8 fw-700 mb-8">為鼓勵支持藝術家和平台運營</h3>
                     <!-- support-list -->
                     <ol class="support-list ms-8">
                         <li class="mb-8">
@@ -292,8 +298,12 @@
                     </ol>
                 </div>
                 <div class="support-robot-img-wrapper">
-                    <img src="../assets/images/goods/goods-robot-lg.png" alt="goods-robot-lg"
-                        class="support-robot-img d-block">
+                    <picture>
+                        <!-- 平板版 -->
+                        <source srcset="../assets/images/goods/goods-robot-lg.svg" media="(min-width: 768px)">
+                        <!-- 手機版 (畫面以小尺寸為主) -->
+                        <img src="../assets/images/goods/goods-robot-sm.svg" alt="support-robot-img" class="support-robot-img d-block">
+                    </picture>
                 </div>
 
             </div>
