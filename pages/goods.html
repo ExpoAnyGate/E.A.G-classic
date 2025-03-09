@@ -10,25 +10,39 @@
 
 <body>
     <%- include('./layout/navbar'); -%>
-        <section class="goods-banner bg-secondary-50 py-sm-80 py-lg-120 position-relative">
-            <img class="circle-position-bottom" src="../assets/images/deco/round-lg-2.png" alt="round-lg-2.png">
-            <img class="circle-position-left" src="../assets/images/deco/round-lg-1.png" alt="round-lg-1.png">
-            <div class="container-fuild d-flex justify-content-center">
-                <div class="goods-banner-image-wrapper">
+        <section class="goods-banner bg-secondary-50 py-sm-80 py-lg-120 position-relative overflow-hidden mt-bp-104-0">
+            <img class="circle-position-left d-none d-sm-block" src="../assets/images/deco/round-lg-2.png"
+                alt="round-lg-1.png">
+            <img class="circle-position-right d-none d-sm-block" src="../assets/images/deco/round-lg-1.png"
+                alt="round-lg-2.png">
+            <div class="goods-banner-image-wrapper position-relative">
+
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="capsule-container">
+                        <div class="capsule-box  d-flex mx-md-3 mx-md-6 gap-md-3">
+                            <div class="capsule bg-official-good-5 mt-auto mb-17"></div>
+                            <div class="capsule bg-official-good-4 mt-auto"></div>
+                            <div class="capsule bg-official-good-2 mt-auto mb-6 ms-5"></div>
+                        </div>
+
+                    </div>
                     <picture>
-                        <!-- 平板版 -->
+                        <!-- 992px 以上載入大圖 -->
+                        <source srcset="../assets/images/goods/goods-gashapon-lg.png" media="(min-width: 992px)">
+                        <!-- 768px 以上載入中圖 -->
                         <source srcset="../assets/images/goods/goods-gashapon-md.png" media="(min-width: 768px)">
-                        <!-- 桌機版  -->
-                        <source srcset="../assets/images/goods/goods-gashapon-lg.png" media="(min-width: 1024px)">
-                        <!-- 手機版 (小尺寸為主) -->
-                        <img src="../assets/images/goods/goods-gashapon-sm.png" alt="gashapon" class="pt-40">
+                        <!-- 預設載入小圖 -->
+                        <img class="gashapon-image" src="../assets/images/goods/goods-gashapon-sm.png"
+                            alt="gashapon image">
                     </picture>
+                    <div class="capsule-container">
+                        <div class="capsule-box d-flex mx-md-3 mx-md-6 gap-md-3">
+                            <div class="capsule bg-official-good-3 mt-auto mb-15 mb-sm-20"></div>
+                            <div class="capsule bg-official-good-1 mt-auto mb-6"></div>
+                            <div class="capsule bg-official-good-6 mt-auto mb-7 ms-3"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="capsule-container">
-                <div class="capsule red"></div>
-                <div class="capsule blue"></div>
-                <div class="capsule yellow"></div>
             </div>
         </section>
         <!-- goods -->
@@ -270,7 +284,7 @@
             <img class="circle-position-right" src="../assets/images/deco/circle-1.png" alt="circle-1.png">
 
             <div class="message-container container-lg d-flex flex-column justify-content-center align-items-center">
-                <div class="message-box bg-gray-000 col-12 p-8">
+                <div class="message-box bg-gray-000 col-12 p-8 position-relative">
                     <h3 class="support-title fs-6 fs-md-8 fw-700 mb-8">為鼓勵支持藝術家和平台運營</h3>
                     <!-- support-list -->
                     <ol class="support-list ms-8">
@@ -302,7 +316,8 @@
                         <!-- 平板版 -->
                         <source srcset="../assets/images/goods/goods-robot-lg.svg" media="(min-width: 768px)">
                         <!-- 手機版 (畫面以小尺寸為主) -->
-                        <img src="../assets/images/goods/goods-robot-sm.svg" alt="support-robot-img" class="support-robot-img d-block">
+                        <img src="../assets/images/goods/goods-robot-sm.svg" alt="support-robot-img"
+                            class="support-robot-img d-block">
                     </picture>
                 </div>
 
